@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Certifications &amp; Accreditations | IAIS UAE</title>
+<meta name="description" content="IAIS UAE holds ISO 9001, ISO 17020, ASNT SNT-TC-1A, PCN, IRATA and API accreditations across our inspection service lines.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<section class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1600&auto=format&fit=crop');">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Certifications</div>
+    <h1>Recognised globally, trusted regionally</h1>
+    <p>Every service line at IAIS UAE operates under an accredited quality system — verifiable, current, and shared with our India headquarters.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Our Accreditations</div>
+      <h2>Certifications</h2>
+      <p>The standards bodies and schemes that govern our work.</p>
+    </div>
+    <div class="cert-grid reveal-stagger" id="certGrid"></div>
+  </div>
+</section>
+
+<section class="alt-bg">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Scope of Accreditation</div>
+      <h2>What Each Certification Covers</h2>
+      <p>A closer look at the scope and relevance of each accreditation we hold.</p>
+    </div>
+    <div class="table-wrap reveal">
+      <table class="cert-table" id="certTable">
+        <thead><tr><th>Certification</th><th>Category</th><th>Scope</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
+      <div class="eyebrow">Personnel Standards</div>
+      <h2>Certified People, Not Just Certified Processes</h2>
+      <p>Accreditation means little without qualified people behind it. Every technician deployed by IAIS UAE holds personal certification current to the discipline they perform.</p>
+    </div>
+    <div class="values-grid reveal-stagger">
+      <div class="value-card"><div class="vi"></div><h4>NDT Technicians</h4><p>ASNT SNT-TC-1A &amp; PCN Level I-III certified across UT, RT, MT, PT and VT.</p></div>
+      <div class="value-card"><div class="vi"></div><h4>Access Technicians</h4><p>IRATA Level 1-3 certified with confined-space and rescue training.</p></div>
+      <div class="value-card"><div class="vi"></div><h4>Pressure Equipment Inspectors</h4><p>API 510 &amp; API 570 certified for vessels and piping systems.</p></div>
+      <div class="value-card"><div class="vi"></div><h4>UAV Pilots</h4><p>Licensed drone pilots trained for industrial and confined-airspace operations.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container cta-inner reveal">
+    <div>
+      <h2>Need certificate copies for a tender or audit?</h2>
+      <p>We can share current accreditation certificates and personnel qualification records on request.</p>
+    </div>
+    <div class="cta-actions">
+      <a href="contact.html" class="btn btn-gold">Request Documentation</a>
+      <a href="clients.html" class="btn btn-outline">See Our Clients</a>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/common.js"></script>
+<script>
+document.getElementById('certGrid').innerHTML = CERTS.map(c => `
+  <div class="cert-item"><div class="badge-ic">${ic(c.icon)}</div><span>${c.name}</span></div>`).join('');
+
+document.querySelector('#certTable tbody').innerHTML = CERTS.map(c => `
+  <tr><td><b>${c.name}</b></td><td>${c.desc}</td><td>${c.scope}</td></tr>`).join('');
+
+document.querySelectorAll('.value-card .vi').forEach((el,i) => {
+  const icons = ['wave','rope','scale','drone'];
+  el.innerHTML = ic(icons[i]);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | IAIS UAE — NDT, Rope Access, Drone Inspection &amp; More</title>
+<meta name="description" content="Explore IAIS UAE's full inspection service line: NDT, Rope Access, Drone Inspection, PWHT, Heat Treatment, Asset Integrity, Corrosion Monitoring, Mechanical Testing and Metallurgical Services.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<section class="page-hero" style="background-image:url('https://iaisindia.com/wp-content/uploads/2023/05/NTPC-Kanti.jpg');">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Services</div>
+    <h1>Nine disciplines. One integrated inspection partner.</h1>
+    <p>From non-destructive testing to metallurgical failure analysis — every service is delivered by certified engineers under one accredited quality system.</p>
+    <div class="page-hero-stats">
+      <div><b data-count="9">0</b><span>Service Lines</span></div>
+      <div><b data-count="150">0</b><span>Certified Engineers</span></div>
+      <div><b data-count="5000">0</b><span>Projects Delivered</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Quick Overview</div>
+      <h2>Our Services at a Glance</h2>
+      <p>Click through below for the full breakdown of methods, standards and typical applications for each discipline.</p>
+    </div>
+    <div class="services-grid reveal-stagger" id="servicesGrid"></div>
+  </div>
+</section>
+
+<section class="alt-bg">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">In Depth</div>
+      <h2>Service Capability Breakdown</h2>
+      <p>What each service covers, the standards it follows, and where it's typically applied.</p>
+    </div>
+    <div id="deepDives"></div>
+  </div>
+</section>
+
+<section class="process-band">
+  <div class="container">
+    <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
+      <div class="eyebrow on-dark">How We Work</div>
+      <h2>Inspection Process</h2>
+      <p>The same disciplined workflow applies across every service line.</p>
+    </div>
+    <div class="process-steps reveal-stagger" id="processSteps"></div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container cta-inner reveal">
+    <div>
+      <h2>Not sure which service fits your project?</h2>
+      <p>Tell us about the asset and the challenge — our engineers will scope the right approach.</p>
+    </div>
+    <div class="cta-actions">
+      <a href="contact.html" class="btn btn-gold">Talk to an Engineer</a>
+      <a href="industries.html" class="btn btn-outline">Browse by Industry</a>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/common.js"></script>
+<script>
+document.getElementById('servicesGrid').innerHTML = SERVICES.map(s => `
+  <div class="s-card">
+    <div class="s-icon">${ic(s.icon)}</div>
+    <h3>${s.title}</h3>
+    <p>${s.short}</p>
+    <a href="#${s.title.replace(/\s+/g,'-').toLowerCase()}" class="learn">Full details ${ic('arrow')}</a>
+  </div>`).join('');
+
+document.getElementById('deepDives').innerHTML = SERVICES.map((s,i) => `
+  <div class="deep-row ${i%2? 'rev':''}" id="${s.title.replace(/\s+/g,'-').toLowerCase()}">
+    <div class="deep-visual reveal">
+      <img src="${s.img}" alt="${s.title}" loading="lazy">
+      <span class="deep-tagnum">SERVICE ${String(i+1).padStart(2,'0')} / 09</span>
+    </div>
+    <div class="deep-body reveal">
+      <div class="deep-icon">${ic(s.icon)}</div>
+      <h3>${s.title}</h3>
+      <p>${s.desc}</p>
+      <div class="deep-tags">${s.tags.map(t=>`<span>${t}</span>`).join('')}</div>
+      <ul class="deep-list">${s.points.map(p=>`<li>${ic('check')}<span>${p}</span></li>`).join('')}</ul>
+    </div>
+  </div>`).join('');
+
+document.getElementById('processSteps').innerHTML = PROCESS.map((p,i) => `
+  <div class="p-step"><div class="circ">${String(i+1).padStart(2,'0')}</div><h4>${p.t}</h4><p>${p.d}</p></div>`).join('');
+</script>
+</body>
+</html>

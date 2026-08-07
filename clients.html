@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Clients | IAIS UAE</title>
+<meta name="description" content="IAIS UAE partners with national and international operators across oil & gas, power, marine and manufacturing sectors.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<style>
+/* About Page - White Header Only */
+header,
+header.scrolled,
+header.solid{
+    background:#fff !important;
+    padding:12px 0 !important;
+    box-shadow:0 2px 15px rgba(0,0,0,.08) !important;
+    backdrop-filter:none !important;
+}
+
+header .logo,
+header .logo *,
+header .nav-links a{
+    color:#003B5C !important;
+}
+
+header .nav-links a:hover,
+header .nav-links a.active{
+    color:#00A3A3 !important;
+}
+
+header .nav-links a::after{
+    background:#F4B400 !important;
+}
+
+header .burger span{
+    background:#003B5C !important;
+}
+
+header .btn-outline{
+    background:#fff !important;
+    color:#003B5C !important;
+    border:1px solid #003B5C !important;
+}
+
+header .btn-outline:hover{
+    background:#003B5C !important;
+    color:#fff !important;
+}
+
+header .btn-primary{
+    background:#00A3A3 !important;
+    color:#fff !important;
+}
+/* About Page Hero Text - Black */
+.page-hero h1{
+    color: #000 !important;
+}
+
+.page-hero p{
+    color: #333 !important;
+}
+
+.page-hero .breadcrumb,
+.page-hero .breadcrumb a{
+    color: #555 !important;
+}
+
+.page-hero-stats div b{
+    color: #000 !important;
+}
+
+.page-hero-stats div span{
+    color: #555 !important;
+
+
+}
+/* ===========================
+   CLIENT PAGE IMPROVEMENTS
+===========================*/
+
+/* Section spacing */
+.clients-page section{
+    padding:100px 0;
+}
+
+/* Section heading */
+.clients-page .section-head h2{
+    font-size:42px;
+    font-weight:700;
+    color:#003B5C;
+    margin-bottom:15px;
+}
+
+.clients-page .section-head p{
+    max-width:650px;
+    color:#666;
+    font-size:17px;
+}
+
+/* Client logo cards */
+.clients-page .clients-track{
+    gap:30px;
+    padding:25px 0;
+}
+
+.clients-page .client-logo{
+    min-width:220px;
+    height:110px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#fff;
+    border-radius:14px;
+    border:1px solid #E6EDF2;
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+    font-size:22px;
+    font-weight:700;
+    color:#003B5C;
+    transition:.35s;
+    opacity:1;
+}
+
+.clients-page .client-logo:hover{
+    transform:translateY(-8px);
+    border-color:#00A3A3;
+    box-shadow:0 20px 45px rgba(0,59,92,.15);
+}
+
+/* Sector cards */
+
+.clients-page .sector-item{
+    background:#fff;
+    padding:35px 25px;
+    border-radius:18px;
+    text-align:center;
+    display:block;
+    border:none;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+    transition:.35s;
+}
+
+.clients-page .sector-item:hover{
+    transform:translateY(-10px);
+    box-shadow:0 25px 50px rgba(0,59,92,.15);
+}
+
+.clients-page .sector-item .si{
+    width:70px;
+    height:70px;
+    margin:auto;
+    margin-bottom:20px;
+    border-radius:50%;
+    background:#ECFDFD;
+}
+
+.clients-page .sector-item span{
+    display:block;
+    margin-top:15px;
+    font-size:17px;
+    font-weight:600;
+}
+
+/* Testimonials */
+
+.clients-page .testi-card{
+    background:#fff;
+    border:none;
+    border-radius:18px;
+    padding:35px;
+    box-shadow:0 15px 40px rgba(0,0,0,.05);
+    transition:.35s;
+}
+
+.clients-page .testi-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(0,59,92,.15);
+}
+
+.clients-page .stars{
+    font-size:18px;
+    color:#F4B400;
+    margin-bottom:20px;
+}
+
+.clients-page .testi-card p{
+    font-size:15px;
+    line-height:1.8;
+    color:#555;
+}
+
+.clients-page .who{
+    margin-top:25px;
+}
+
+.clients-page .av{
+    width:55px!important;
+    height:55px!important;
+    font-size:18px!important;
+}
+
+/* Why Choose section */
+
+.clients-page .why-wrap{
+    align-items:center;
+    gap:70px;
+}
+
+.clients-page .why-item{
+    padding:18px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.clients-page .why-item:hover{
+    background:#fff;
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+}
+
+/* CTA */
+
+.clients-page .cta-band{
+    background:linear-gradient(135deg,#003B5C,#001E32);
+}
+
+.clients-page .cta-inner h2{
+    color:#fff;
+    font-size:42px;
+}
+
+.clients-page .cta-inner p{
+    color:rgba(255,255,255,.8);
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.clients-page .client-logo{
+    min-width:170px;
+    height:90px;
+    font-size:18px;
+}
+
+.clients-page .section-head h2{
+    font-size:32px;
+}
+
+.clients-page .sector-item{
+    padding:25px;
+}
+
+.clients-page .testi-card{
+    padding:25px;
+}
+
+}
+</style>
+</head>
+<body class="clients-page">
+
+<div id="site-header"></div>
+
+<section class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1544376798-89aa6b82c6df?q=80&w=1600&auto=format&fit=crop');">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Clients</div>
+    <h1>Trusted by national and international operators</h1>
+    <p>From national oil companies to independent EPC contractors, our clients rely on us for inspection data they can act on.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
+      <div class="eyebrow">Global Clients</div>
+      <h2>Who We Work With</h2>
+    </div>
+  </div>
+  <div class="clients-marquee"><div class="clients-track" id="clientsTrack"></div></div>
+</section>
+
+<section class="alt-bg">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Sectors</div>
+      <h2>Client Sectors We Serve</h2>
+      <p>Long-term relationships across the energy and industrial value chain.</p>
+    </div>
+    <div class="sector-grid reveal-stagger" id="sectorGrid"></div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
+      <div class="eyebrow">Client Voices</div>
+      <h2>What Our Clients Say</h2>
+    </div>
+    <div class="testi-grid reveal-stagger" id="testiGrid"></div>
+  </div>
+</section>
+
+<section class="alt-bg">
+  <div class="container">
+    <div class="why-wrap">
+      <div>
+        <div class="eyebrow">Client Partnership</div>
+        <h2 style="font-size:clamp(26px,3.2vw,38px);margin-bottom:18px;">Why operators keep coming back to IAIS UAE</h2>
+        <div class="why-list" style="margin-top:0;">
+          <div class="why-item"><div class="why-num">01</div><div><h4>Consistent Reporting Standards</h4><p>The same code-compliant reporting format across every project, every year.</p></div></div>
+          <div class="why-item"><div class="why-num">02</div><div><h4>Long-Term Framework Agreements</h4><p>Multi-year inspection contracts with several national and regional operators.</p></div></div>
+          <div class="why-item"><div class="why-num">03</div><div><h4>Group-Level Escalation Support</h4><p>Access to specialist metallurgy and RBI resources via the wider IAIS Group in India.</p></div></div>
+        </div>
+        <a href="contact.html" class="btn btn-dark" style="margin-top:32px;">Become a Client</a>
+      </div>
+      <div class="why-visual reveal">
+        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format&fit=crop" alt="IAIS UAE client site visit">
+        <div class="why-badge-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+          <div><b>10+ National &amp; Regional Operators</b><span>Active framework agreements across the GCC</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container cta-inner reveal">
+    <div>
+      <h2>Want to become a long-term inspection partner?</h2>
+      <p>Let's discuss a framework agreement tailored to your asset base.</p>
+    </div>
+    <div class="cta-actions">
+      <a href="contact.html" class="btn btn-gold">Get In Touch</a>
+      <a href="projects.html" class="btn btn-outline">View Our Projects</a>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/common.js"></script>
+<script>
+document.getElementById('clientsTrack').innerHTML = [...CLIENTS, ...CLIENTS].map(c => `<span class="client-logo">${c}</span>`).join('');
+
+document.getElementById('sectorGrid').innerHTML = SECTORS.map(s => `
+  <div class="sector-item"><div class="si">${ic(s.icon)}</div><span>${s.label}</span></div>`).join('');
+
+document.getElementById('testiGrid').innerHTML = TESTIMONIALS_EXT.map(t => `
+  <div class="testi-card">
+    <div class="stars">★★★★★</div>
+    <p>&ldquo;${t.q}&rdquo;</p>
+    <div class="who"><div class="av">${t.n.split(' ').map(w=>w[0]).slice(0,2).join('')}</div><div><b>${t.n}</b><span>${t.r}</span></div></div>
+  </div>`).join('');
+</script>
+</body>
+</html>

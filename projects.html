@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | IAIS UAE — Featured Inspection Programmes</title>
+<meta name="description" content="Browse IAIS UAE's portfolio of inspection and integrity projects across Oil & Gas, Offshore, Marine and Power sectors.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<section class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1516937941344-00b4e0337589?q=80&w=1600&auto=format&fit=crop');">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Projects</div>
+    <h1>5,000+ projects, delivered on schedule</h1>
+    <p>A snapshot of recent inspection and integrity programmes across the UAE and wider GCC.</p>
+    <div class="page-hero-stats">
+      <div><b data-count="5000">0</b><span>Projects Delivered</span></div>
+      <div><b data-count="25">0</b><span>Countries</span></div>
+      <div><b data-count="20">0</b><span>Years Track Record</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Portfolio</div>
+      <h2>Featured Projects</h2>
+      <p>Filter by sector to see how our teams approach different asset challenges.</p>
+    </div>
+
+    <div class="projects-tabs reveal">
+      <button class="p-tab active" data-filter="all">All</button>
+      <button class="p-tab" data-filter="Oil & Gas">Oil &amp; Gas</button>
+      <button class="p-tab" data-filter="Offshore">Offshore</button>
+      <button class="p-tab" data-filter="Marine">Marine</button>
+      <button class="p-tab" data-filter="Power">Power</button>
+    </div>
+
+    <div class="projects-grid reveal-stagger" id="projectsGrid"></div>
+  </div>
+</section>
+
+<section class="alt-bg">
+  <div class="container">
+    <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
+      <div class="eyebrow">Client Voices</div>
+      <h2>What Clients Say About Our Project Delivery</h2>
+    </div>
+    <div class="testi-grid reveal-stagger" id="testiGrid"></div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container cta-inner reveal">
+    <div>
+      <h2>Have a project that needs certified inspection?</h2>
+      <p>Share your scope and timeline — we'll come back with a mobilisation plan within 24 hours.</p>
+    </div>
+    <div class="cta-actions">
+      <a href="contact.html" class="btn btn-gold">Start a Project</a>
+      <a href="certifications.html" class="btn btn-outline">View Our Accreditations</a>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/common.js"></script>
+<script>
+function renderProjects(filter){
+  const grid = document.getElementById('projectsGrid');
+  const list = filter === 'all' ? PROJECTS : PROJECTS.filter(p => p.tag === filter);
+  grid.innerHTML = list.map(p => `
+    <div class="pr-card">
+      <div class="pr-img"><img src="${p.img}" alt="${p.title}" loading="lazy"><span class="pr-tag">${p.tag}</span></div>
+      <div class="pr-body">
+        <h4>${p.title}</h4>
+        <p>${p.desc}</p>
+        <div class="pr-challenge"><b>Challenge</b>${p.challenge}</div>
+        <div class="pr-meta"><span>📍 <b>${p.loc}</b></span><span>⏱ <b>${p.dur}</b></span></div>
+      </div>
+    </div>`).join('');
+}
+renderProjects('all');
+document.querySelectorAll('.p-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.p-tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    renderProjects(tab.dataset.filter);
+  });
+});
+
+document.getElementById('testiGrid').innerHTML = TESTIMONIALS_EXT.slice(0,3).map(t => `
+  <div class="testi-card">
+    <div class="stars">★★★★★</div>
+    <p>&ldquo;${t.q}&rdquo;</p>
+    <div class="who"><div class="av">${t.n.split(' ').map(w=>w[0]).slice(0,2).join('')}</div><div><b>${t.n}</b><span>${t.r}</span></div></div>
+  </div>`).join('');
+</script>
+</body>
+</html>

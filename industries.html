@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Industries We Serve | IAIS UAE</title>
+<meta name="description" content="IAIS UAE serves Oil & Gas, Petrochemical, Marine, Offshore, Power Plants, Construction, Manufacturing and Renewable Energy sectors across the UAE and GCC.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<section class="page-hero" style="background-image:url('https://iaisindia.com/wp-content/uploads/2022/06/Eddy-Current-Inspection-with-irata-rope-2.jpeg');">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Industries</div>
+    <h1>Purpose-built inspection for eight critical sectors</h1>
+    <p>Every industry carries different risks, codes and consequences of failure. Our programmes are shaped around each one.</p>
+    <div class="page-hero-stats">
+      <div><b data-count="8">0</b><span>Sectors Served</span></div>
+      <div><b data-count="25">0</b><span>Countries</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Sector Overview</div>
+      <h2>Industries at a Glance</h2>
+      <p>Select an industry below to jump to its full inspection profile.</p>
+    </div>
+    <div class="industries-grid reveal-stagger" id="industriesGrid"></div>
+  </div>
+</section>
+
+<section class="alt-bg">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">In Depth</div>
+      <h2>Sector Capability Breakdown</h2>
+      <p>What we deliver, sector by sector.</p>
+    </div>
+    <div id="deepDives"></div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container cta-inner reveal">
+    <div>
+      <h2>Don't see your sector listed?</h2>
+      <p>Our inspection methods transfer across industries — tell us about your asset and we'll scope the right approach.</p>
+    </div>
+    <div class="cta-actions">
+      <a href="contact.html" class="btn btn-gold">Talk to an Engineer</a>
+      <a href="services.html" class="btn btn-outline">Browse Services</a>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/common.js"></script>
+<script>
+document.getElementById('industriesGrid').innerHTML = INDUSTRIES.map((it,i) => `
+  <div class="i-card">
+    <img src="${it.img}" alt="${it.title} industry" loading="lazy">
+    <div class="label"><span class="idx">${String(i+1).padStart(2,'0')}</span><h4>${it.title}</h4></div>
+    <a href="#${it.title.replace(/\s+/g,'-').toLowerCase()}" aria-label="View ${it.title}"></a>
+  </div>`).join('');
+
+document.getElementById('deepDives').innerHTML = INDUSTRIES.map((it,i) => `
+  <div class="deep-row ${i%2? 'rev':''}" id="${it.title.replace(/\s+/g,'-').toLowerCase()}">
+    <div class="deep-visual reveal">
+      <img src="${it.img}" alt="${it.title}" loading="lazy">
+      <span class="deep-tagnum">SECTOR ${String(i+1).padStart(2,'0')} / 08</span>
+    </div>
+    <div class="deep-body reveal">
+      <div class="deep-icon">${ic(it.icon)}</div>
+      <h3>${it.title}</h3>
+      <p>${it.desc}</p>
+      <ul class="deep-list">${it.points.map(p=>`<li>${ic('check')}<span>${p}</span></li>`).join('')}</ul>
+      <a href="contact.html" class="btn btn-dark" style="margin-top:20px;">Discuss Your ${it.title} Project</a>
+    </div>
+  </div>`).join('');
+</script>
+</body>
+</html>
