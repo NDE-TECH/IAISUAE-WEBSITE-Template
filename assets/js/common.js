@@ -19,8 +19,15 @@ function currentPage(){
   return p === '' ? 'index.html' : p;
 }
 
+function activeNavPage(){
+  const p = currentPage();
+  if (typeof SERVICE_PAGE_MAP !== 'undefined' && Object.values(SERVICE_PAGE_MAP).includes(p)) return 'services.html';
+  if (typeof INDUSTRY_PAGE_MAP !== 'undefined' && Object.values(INDUSTRY_PAGE_MAP).includes(p)) return 'industries.html';
+  return p;
+}
+
 function renderHeader(){
-  const cur = currentPage();
+  const cur = activeNavPage();
   const el = document.getElementById('site-header');
 
   if(!el) return;
@@ -89,9 +96,10 @@ function renderFooter(){
   el.outerHTML = `
   <footer>
     <div class="container">
-      <a href="https://iaisindia.com" target="_blank" rel="noopener" class="footer-top-note">
-        ${ic('external')} Part of the IAIS Group — visit our India operations at <a href="https://iaisindia.com" target="_blank" rel="noopener">iaisindia.com</a>
-      </a>
+      <div class="footer-top-note">
+        ${ic('external')} Part of the IAIS Group — visit our India operations at
+        <a href="https://iaisindia.com" target="_blank" rel="noopener">iaisindia.com</a>
+      </div>
       <div class="footer-grid">
         <div class="footer-brand">
          <a href="index.html" class="logo company-logo" aria-label="IAIS UAE Home">
@@ -105,17 +113,17 @@ function renderFooter(){
           <div class="footer-social">
             <a href="#" aria-label="LinkedIn">${ic('users')}</a>
             <a href="#" aria-label="Website">${ic('globe')}</a>
-            <a href="mailto:info@iaisuae.com" aria-label="Email">${ic('mail')}</a>
+            <a href="mailto:i@iaisindia.com" aria-label="Email">${ic('mail')}</a>
           </div>
         </div>
         <div class="footer-col">
           <h5>Services</h5>
           <ul>
-            <li><a href="services.html">NDT Inspection</a></li>
-            <li><a href="services.html">Rope Access</a></li>
-            <li><a href="services.html">Drone Inspection</a></li>
-            <li><a href="services.html">Asset Integrity</a></li>
-            <li><a href="services.html">Metallurgical Services</a></li>
+            <li><a href="ndt-inspection.html">NDT Inspection</a></li>
+            <li><a href="rope-access.html">Rope Access</a></li>
+            <li><a href="drone-inspection.html">Drone Inspection</a></li>
+            <li><a href="asset-integrity.html">Asset Integrity</a></li>
+            <li><a href="metallurgical-services.html">Metallurgical Services</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -132,8 +140,8 @@ function renderFooter(){
           <h5>UAE Office</h5>
           <ul>
             <li><a href="contact.html">Musaffah Industrial Area, Abu Dhabi</a></li>
-            <li><a href="tel:+91 9384127579">+91 93841 27579</a></li>
-            <li><a href="mailto:info@iaisuae.com">i@iaisindia.com
+            <li><a href="tel:+919384127579">+91 93841 27579</a></li>
+            <li><a href="mailto:i@iaisindia.com">i@iaisindia.com
 </a></li>
           </ul>
         </div>

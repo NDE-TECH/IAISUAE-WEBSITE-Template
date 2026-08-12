@@ -1,0 +1,23 @@
+SEO VALIDATION REPORT
+
+file | title chars | description chars | canonical | H1 | valid JSON-LD
+ndt-inspection.html | 38 | 145 | OK | OK | OK
+rope-access.html | 37 | 144 | OK | OK | OK
+drone-inspection.html | 40 | 143 | OK | OK | OK
+pwht.html | 55 | 141 | OK | OK | OK
+heat-treatment.html | 38 | 150 | OK | OK | OK
+asset-integrity.html | 51 | 151 | OK | OK | OK
+corrosion-monitoring.html | 44 | 144 | OK | OK | OK
+mechanical-testing.html | 42 | 141 | OK | OK | OK
+metallurgical-services.html | 56 | 155 | OK | OK | OK
+oil-gas.html | 44 | 138 | OK | OK | OK
+petrochemical.html | 48 | 147 | OK | OK | OK
+marine.html | 47 | 152 | OK | OK | OK
+offshore.html | 48 | 150 | OK | OK | OK
+power-plants.html | 46 | 140 | OK | OK | OK
+construction.html | 49 | 155 | OK | OK | OK
+manufacturing.html | 45 | 153 | OK | OK | OK
+renewable-energy.html | 51 | 147 | OK | OK | OK
+
+Internal route files checked:
+Missing generated detail pages: None

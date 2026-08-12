@@ -789,3 +789,110 @@ header.scrolled .brand-logo-img{
         max-height: 52px !important;
     }
 }
+
+
+/* ============================================================
+   IAIS UAE — SERVICE / INDUSTRY DETAIL PAGES
+   ============================================================ */
+.detail-page{background:var(--bg);}
+.detail-page .detail-hero{
+  min-height:70vh;
+  align-items:flex-end;
+  padding-top:170px;
+  padding-bottom:72px;
+  background-image:
+    linear-gradient(90deg,rgba(0,38,59,.94) 0%,rgba(0,38,59,.82) 47%,rgba(0,38,59,.48) 100%),
+    var(--detail-hero-image);
+  background-size:cover;
+  background-position:center;
+}
+.detail-page .detail-hero::before{opacity:.7;}
+.detail-page .detail-hero h1{max-width:850px;}
+.detail-page .detail-hero p{max-width:720px;font-size:17px;}
+.detail-kicker{
+  display:inline-flex;align-items:center;gap:9px;
+  font-family:var(--font-mono);font-size:12px;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--teal-light);
+  margin-bottom:14px;font-weight:700;
+}
+.detail-kicker::before{content:"";width:28px;height:2px;background:var(--gold);}
+.detail-layout{
+  display:grid;grid-template-columns:minmax(0,1.1fr) minmax(320px,.9fr);
+  gap:64px;align-items:center;
+}
+.detail-copy h2{font-size:clamp(30px,3.5vw,44px);margin-bottom:20px;}
+.detail-copy p{font-size:16.5px;color:var(--text-soft);margin-bottom:18px;}
+.detail-media{position:relative;}
+.detail-media img{
+  width:100%;height:460px;object-fit:cover;border-radius:18px;
+  box-shadow:var(--shadow-lg);
+}
+.detail-media-badge{
+  position:absolute;left:22px;bottom:22px;right:22px;
+  padding:18px 20px;border-radius:12px;background:rgba(0,38,59,.92);
+  color:#fff;backdrop-filter:blur(10px);
+}
+.detail-media-badge b{display:block;font-family:var(--font-head);font-size:16px;}
+.detail-media-badge span{font-size:12.5px;color:rgba(255,255,255,.72);}
+.detail-tags{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0 0;}
+.detail-tags span{
+  padding:8px 13px;border-radius:999px;background:rgba(0,163,163,.10);
+  border:1px solid rgba(0,163,163,.18);color:var(--navy);font-size:12.5px;font-weight:700;
+}
+.capability-grid,.application-grid,.related-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:22px;
+}
+.capability-card,.application-card,.related-card{
+  background:#fff;border:1px solid var(--line);border-radius:14px;
+  padding:28px;box-shadow:var(--shadow-sm);transition:.3s var(--ease);
+}
+.capability-card:hover,.application-card:hover,.related-card:hover{
+  transform:translateY(-5px);box-shadow:var(--shadow-md);border-color:rgba(0,163,163,.25);
+}
+.capability-card .num{
+  width:42px;height:42px;border-radius:50%;display:grid;place-items:center;
+  background:var(--navy);color:#fff;font-family:var(--font-mono);font-size:12px;
+  margin-bottom:18px;
+}
+.capability-card h3,.application-card h3,.related-card h3{font-size:18px;margin-bottom:10px;}
+.capability-card p,.application-card p,.related-card p{font-size:14px;color:var(--text-soft);}
+.application-card{padding:24px;}
+.application-card::before{
+  content:"✓";display:block;color:var(--teal);font-size:20px;font-weight:800;margin-bottom:10px;
+}
+.related-card{display:flex;flex-direction:column;min-height:190px;}
+.related-card .learn{margin-top:auto;padding-top:18px;color:var(--teal);font-weight:700;font-size:13px;}
+.detail-band{
+  background:linear-gradient(135deg,var(--navy-deep),var(--navy));
+  color:#fff;overflow:hidden;
+}
+.detail-band h2{color:#fff;}
+.detail-band p{color:rgba(255,255,255,.72);}
+.detail-band .section-head{max-width:760px;}
+.detail-process{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
+  background:rgba(255,255,255,.12);border-radius:14px;overflow:hidden;
+}
+.detail-process .step{padding:30px;background:rgba(0,38,59,.65);}
+.detail-process .step b{
+  display:block;color:var(--gold);font-family:var(--font-mono);font-size:12px;margin-bottom:12px;
+}
+.detail-process .step h3{color:#fff;font-size:17px;margin-bottom:8px;}
+.detail-process .step p{font-size:13.5px;}
+.detail-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px;}
+.detail-breadcrumb{display:flex;gap:8px;flex-wrap:wrap;}
+.detail-breadcrumb a{color:rgba(255,255,255,.78);}
+.detail-breadcrumb strong{color:#fff;font-weight:500;}
+@media(max-width:1000px){
+  .detail-layout{grid-template-columns:1fr;gap:38px;}
+  .detail-media img{height:380px;}
+  .capability-grid,.related-grid{grid-template-columns:repeat(2,1fr);}
+  .detail-process{grid-template-columns:repeat(2,1fr);}
+}
+@media(max-width:700px){
+  .detail-page .detail-hero{min-height:62vh;padding-top:130px;padding-bottom:52px;}
+  .capability-grid,.application-grid,.related-grid,.detail-process{grid-template-columns:1fr;}
+  .detail-media img{height:290px;}
+  .detail-media-badge{position:static;border-radius:0 0 14px 14px;margin-top:-14px;}
+}
+

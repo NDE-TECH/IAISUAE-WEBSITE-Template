@@ -311,4 +311,27 @@ const FAQS = [
   {q:'Is IAIS UAE related to IAIS India?', a:'Yes — IAIS UAE is part of the IAIS Group, extending the inspection expertise built at iaisindia.com into the UAE and GCC market.'},
 ];
 
-
+/* ============================================================
+   SEO DETAIL PAGE ROUTES
+   ============================================================ */
+const SERVICE_PAGE_MAP = {
+  "NDT Inspection": "ndt-inspection.html",
+  "Rope Access": "rope-access.html",
+  "Drone Inspection": "drone-inspection.html",
+  "PWHT": "pwht.html",
+  "Heat Treatment": "heat-treatment.html",
+  "Asset Integrity": "asset-integrity.html",
+  "Corrosion Monitoring": "corrosion-monitoring.html",
+  "Mechanical Testing": "mechanical-testing.html",
+  "Metallurgical Services": "metallurgical-services.html"
+};
+const INDUSTRY_PAGE_MAP = {
+  "Oil & Gas": "oil-gas.html",
+  "Petrochemical": "petrochemical.html",
+  "Marine": "marine.html",
+  "Offshore": "offshore.html",
+  "Power Plants": "power-plants.html",
+  "Construction": "construction.html",
+  "Manufacturing": "manufacturing.html",
+  "Renewable Energy": "renewable-energy.html"
+};
