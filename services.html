@@ -148,12 +148,12 @@
 <section class="page-hero" style="background-image:url('https://iaisindia.com/wp-content/uploads/2023/05/NTPC-Kanti.jpg');">
   <div class="container">
     <div class="breadcrumb"><a href="index.html">Home</a> / Services</div>
-    <h1>Nine disciplines. One integrated inspection partner.</h1>
-    <p>From non-destructive testing to metallurgical failure analysis — every service is delivered by certified engineers under one accredited quality system.</p>
+    <h1>Complete industrial inspection service capability</h1>
+    <p>Browse conventional NDT, PWHT, marine, IBR and specialist IAIS Group solutions — all organised in one clear service library.</p>
     <div class="page-hero-stats">
-      <div><b data-count="9">0</b><span>Service Lines</span></div>
+      <div><b data-count="64">0</b><span>Individual Services</span></div>
+      <div><b data-count="5">0</b><span>Capability Groups</span></div>
       <div><b data-count="150">0</b><span>Certified Engineers</span></div>
-      <div><b data-count="5000">0</b><span>Projects Delivered</span></div>
     </div>
   </div>
 </section>
@@ -162,8 +162,8 @@
   <div class="container">
     <div class="section-head reveal">
       <div class="eyebrow">Quick Overview</div>
-      <h2>Our Services at a Glance</h2>
-      <p>Click through below for the full breakdown of methods, standards and typical applications for each discipline.</p>
+      <h2>Service Categories</h2>
+      <p>Select a capability group below, then browse the services in the same image-led format used throughout the original IAIS UAE design.</p>
     </div>
     <div class="services-grid reveal-stagger" id="servicesGrid"></div>
   </div>
@@ -175,6 +175,13 @@
       <div class="eyebrow">In Depth</div>
       <h2>Service Capability Breakdown</h2>
       <p>What each service covers, the standards it follows, and where it's typically applied.</p>
+    </div>
+    <div class="service-browser-toolbar reveal">
+      <div class="projects-tabs service-category-tabs" id="serviceCategoryTabs"></div>
+      <div class="service-search-wrap">
+        <input type="search" id="serviceSearch" placeholder="Search services — e.g. PAUT, PWHT, PMI, drone..." aria-label="Search IAIS UAE services">
+        <span id="serviceResultCount" class="service-result-count"></span>
+      </div>
     </div>
     <div id="deepDives"></div>
   </div>
@@ -207,34 +214,8 @@
 <div id="site-footer"></div>
 
 <script src="assets/js/data.js"></script>
+<script src="assets/js/services-data.js"></script>
 <script src="assets/js/common.js"></script>
-<script>
-document.getElementById('servicesGrid').innerHTML = SERVICES.map(s => `
-  <div class="s-card">
-    <div class="s-icon">${ic(s.icon)}</div>
-    <h3>${s.title}</h3>
-    <p>${s.short}</p>
-    <a href="${SERVICE_PAGE_MAP[s.title] || 'services.html'}" class="learn">View service page ${ic('arrow')}</a>
-  </div>`).join('');
-
-document.getElementById('deepDives').innerHTML = SERVICES.map((s,i) => `
-  <div class="deep-row ${i%2? 'rev':''}" id="${s.title.replace(/\s+/g,'-').toLowerCase()}">
-    <div class="deep-visual reveal">
-      <img src="${s.img}" alt="${s.title}" loading="lazy">
-      <span class="deep-tagnum">SERVICE ${String(i+1).padStart(2,'0')} / 09</span>
-    </div>
-    <div class="deep-body reveal">
-      <div class="deep-icon">${ic(s.icon)}</div>
-      <h3>${s.title}</h3>
-      <p>${s.desc}</p>
-      <div class="deep-tags">${s.tags.map(t=>`<span>${t}</span>`).join('')}</div>
-      <ul class="deep-list">${s.points.map(p=>`<li>${ic('check')}<span>${p}</span></li>`).join('')}</ul>
-      <a href="${SERVICE_PAGE_MAP[s.title] || 'services.html'}" class="btn btn-dark" style="margin-top:20px;">Open ${s.title} Page</a>
-    </div>
-  </div>`).join('');
-
-document.getElementById('processSteps').innerHTML = PROCESS.map((p,i) => `
-  <div class="p-step"><div class="circ">${String(i+1).padStart(2,'0')}</div><h4>${p.t}</h4><p>${p.d}</p></div>`).join('');
-</script>
+<script src="assets/js/services-page.js"></script>
 </body>
 </html>
