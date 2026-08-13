@@ -256,3 +256,55 @@ function wireFaq(containerId){
 }
 
 document.addEventListener('DOMContentLoaded', initChrome);
+
+const SERVICE_DETAIL_PAGES = [
+  'ndt-inspection.html',
+  'rope-access.html',
+  'drone-inspection.html',
+  'pwht.html',
+  'heat-treatment.html',
+  'asset-integrity.html',
+  'corrosion-monitoring.html',
+  'mechanical-testing.html',
+  'metallurgical-services.html'
+];
+
+const INDUSTRY_DETAIL_PAGES = [
+  'oil-gas.html',
+  'petrochemical.html',
+  'marine.html',
+  'offshore.html',
+  'power-plants.html',
+  'construction.html',
+  'manufacturing.html',
+  'renewable-energy.html'
+];
+
+function currentPage() {
+  const cleanPath = window.location.pathname.replace(/\/+$/, '');
+  const page = cleanPath.split('/').pop();
+
+  return page || 'index.html';
+}
+
+function activeNavPage() {
+  const path = window.location.pathname;
+  const page = currentPage();
+
+  // Nested service pages
+  if (/\/services\//.test(path)) {
+    return 'services.html';
+  }
+
+  // Individual service pages
+  if (SERVICE_DETAIL_PAGES.includes(page)) {
+    return 'services.html';
+  }
+
+  // Individual industry pages
+  if (INDUSTRY_DETAIL_PAGES.includes(page)) {
+    return 'industries.html';
+  }
+
+  return page;
+}
