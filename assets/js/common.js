@@ -51,8 +51,8 @@ function renderHeader(){
       </nav>
 
       <div class="nav-actions">
-        <a href="contact.html" class="btn btn-outline">
-          Get a Quote
+        <a href="about.html" class="btn btn-outline">
+          As has above
         </a>
 
         <a href="contact.html" class="btn btn-primary">
