@@ -34,7 +34,7 @@ function renderHeader(){
          aria-label="IAIS UAE Home">
 
         <img
-          src="https://iaisindia.com/wp-content/uploads/2026/08/iaisuae.png"
+          src="https://iaisindia.com/wp-content/uploads/2026/08/IAIS_UAE_Final_Logo-scaled.png"
           alt="IAIS India - IAIS UAE"
           class="header-logo-img"
         >
@@ -96,7 +96,7 @@ function renderFooter(){
         <div class="footer-brand">
          <a href="index.html" class="logo company-logo" aria-label="IAIS UAE Home">
   <img
-    src="https://iaisindia.com/wp-content/uploads/2026/08/iaisuae.png"
+    src="https://iaisindia.com/wp-content/uploads/2026/08/IAIS_UAE_Final_Logo-scaled.png"
     alt="IAIS India - IAIS UAE"
     class="header-logo-img"
   >

@@ -125,11 +125,11 @@ const INDUSTRIES = [
    PROCESS
    ============================================================ */
 const PROCESS = [
-  {t:'Scope & Survey', d:'Site assessment and inspection scope definition against applicable codes.'},
-  {t:'Mobilisation', d:'Certified crews and calibrated equipment deployed on schedule.'},
-  {t:'Inspection', d:'Field data captured using calibrated, code-compliant NDT methods.'},
-  {t:'Analysis', d:'Engineers evaluate results against acceptance criteria and standards.'},
-  {t:'Reporting', d:'Auditable digital reports delivered with clear recommendations.'},
+  {t:'Requirement Review & Planning', d:'We evaluate the asset, inspection objectives, applicable standards, access conditions and project requirements to define the most suitable inspection strategy.'},
+  {t:'Resource Mobilisation', d:'Qualified personnel, appropriate inspection equipment, approved procedures and required accessories are prepared and mobilized according to the project schedule.'},
+  {t:'Inspection Execution', d:'Field inspection is performed using suitable conventional or advanced techniques, with careful attention to safety, coverage, calibration and data quality.'},
+  {t:'Data Analysis & Validation', d:'Inspection data is reviewed by competent technical personnel, validated against applicable acceptance criteria and evaluated for reportable indications.'},
+  {t:'Reporting & Technical Support', d:'Clear and traceable'},
 ];
 
 /* ============================================================
@@ -148,21 +148,142 @@ const PROJECTS = [
 ];
 
 /* ============================================================
-   CERTIFICATIONS
+   CERTIFICATIONS, APPROVALS & TECHNICAL FRAMEWORKS
    ============================================================ */
 const CERTS = [
-  {icon:'award', name:'ISO 9001:2015', desc:'Quality Management Systems', scope:'Company-wide QMS covering all inspection, testing and reporting activities.'},
-  {icon:'shield', name:'ISO 17020', desc:'Inspection Body Accreditation', scope:'Third-party accreditation for the competence of our inspection body.'},
-  {icon:'check', name:'ASNT SNT-TC-1A', desc:'NDT Personnel Certification', scope:'Employer-based certification programme for NDT technicians (Level I-III).'},
-  {icon:'award', name:'PCN Level II/III', desc:'Personnel Certification in NDT', scope:'BINDT-scheme certification recognised across the GCC and Europe.'},
-  {icon:'shield', name:'IRATA Access', desc:'Rope Access Certification', scope:'International rope access trade association certified technicians.'},
-  {icon:'check', name:'API 510 / 570', desc:'Pressure Vessel & Piping Inspector', scope:'API-certified inspectors for in-service vessels and piping systems.'},
+  {
+    icon: 'award',
+    name: 'NDT Personnel Certification',
+    desc: 'ASNT, PCN, ISO 9712 & CSWIP',
+    scope: 'NDT personnel competency covering Level I, II and III certification schemes, including ASNT SNT-TC-1A, PCN, ISO 9712 and CSWIP NDT qualifications.'
+  },
+  {
+    icon: 'shield',
+    name: 'API Inspection & Integrity',
+    desc: 'API 510, 570, 571, 577, 578, 580, 653, 650, 936 & 1169',
+    scope: 'Inspection and integrity frameworks covering pressure vessels, piping, materials, welding, storage tanks, fixed equipment, refractory systems and pipeline inspection.'
+  },
+  {
+    icon: 'check',
+    name: 'Welding & Fabrication Inspection',
+    desc: 'AWS CWI, CSWIP, IIW/IWI, ASME & ISO 3834',
+    scope: 'Welding inspection, fabrication quality control and welding procedure requirements supported by AWS, CSWIP, IIW/IWI, ASME Section IX and ISO 3834 frameworks.'
+  },
+  {
+    icon: 'award',
+    name: 'Coating, Painting & Corrosion',
+    desc: 'AMPP/NACE CIP, BGAS-CSWIP, FROSIO & SSPC',
+    scope: 'Coating inspection, painting quality control, corrosion assessment and protective coating inspection supported by recognized industry qualification schemes.'
+  },
+  {
+    icon: 'shield',
+    name: 'Building & Civil Inspection',
+    desc: 'RICS, ICC, ACI & Structural Inspection',
+    scope: 'Building-condition assessment, structural inspection, concrete inspection and non-destructive testing of civil and structural assets.'
+  },
+  {
+    icon: 'check',
+    name: 'Marine & Ship Inspection',
+    desc: 'DNV, ABS, Bureau Veritas, LR, IRS, RINA & ClassNK',
+    scope: 'Marine and ship inspection practices aligned with major classification societies and applicable IACS requirements.'
+  },
+  {
+    icon: 'award',
+    name: 'Electrical & Hazardous Areas',
+    desc: 'IEC, IECEx, CompEx & Electrical Thermography',
+    scope: 'Electrical inspection, thermographic assessment and hazardous-area competence covering applicable IEC, IECEx and CompEx frameworks.'
+  },
+  {
+    icon: 'shield',
+    name: 'Pressure Equipment & Piping',
+    desc: 'ASME, API, NBIC, PED & EN Standards',
+    scope: 'Inspection and assessment of pressure vessels, boilers, piping and pressure equipment using recognized international codes and inspection practices.'
+  },
+  {
+    icon: 'check',
+    name: 'Pipeline Inspection & Integrity',
+    desc: 'API 1169, ASME B31, ISO & AMPP',
+    scope: 'Pipeline inspection, NDT, integrity assessment, corrosion control and inspection activities aligned with applicable pipeline standards and practices.'
+  },
+  {
+    icon: 'award',
+    name: 'Storage Tank Inspection',
+    desc: 'API 653, API 650, API 620 & EEMUA 159',
+    scope: 'Inspection and assessment of above-ground storage tanks, including tank floors, shells, roofs, welds and associated structural components.'
+  },
+  {
+    icon: 'shield',
+    name: 'Mechanical & Rotating Equipment',
+    desc: 'API, ISO 18436 & Condition Monitoring',
+    scope: 'Condition monitoring and inspection covering vibration analysis, thermography, lubrication analysis and mechanical equipment assessment.'
+  },
+  {
+    icon: 'check',
+    name: 'Lifting Equipment Inspection',
+    desc: 'LEEA, LOLER & ASME B30',
+    scope: 'Inspection and testing of cranes, hoists, lifting accessories, rigging equipment and load-test activities under recognized lifting-equipment frameworks.'
+  },
+  {
+    icon: 'award',
+    name: 'Rope Access & Work at Height',
+    desc: 'IRATA, SPRAT & Fall Protection',
+    scope: 'Industrial rope access, work-at-height, confined-space and fall-protection competence for inspection and maintenance activities in difficult-access locations.'
+  },
+  {
+    icon: 'shield',
+    name: 'Quality, Safety & Environment',
+    desc: 'ISO 9001, ISO 14001, ISO 45001 & ISO 29001',
+    scope: 'Quality, environmental, occupational health and safety and petroleum-sector quality management frameworks, including applicable lead-auditor qualifications.'
+  },
+  {
+    icon: 'check',
+    name: 'Inspection Body & Laboratory Accreditation',
+    desc: 'ISO/IEC 17020, ISO/IEC 17025 & ISO 17034',
+    scope: 'International frameworks covering inspection-body competence, testing and calibration laboratory competence and reference-material producer requirements.'
+  },
+  {
+    icon: 'award',
+    name: 'Fire Protection & Refractory Inspection',
+    desc: 'API 936, NFPA & Passive Fire Protection',
+    scope: 'Inspection of refractory systems, passive fire protection, fire-stopping systems and associated fire-protection installations.'
+  },
+  {
+    icon: 'shield',
+    name: 'Offshore Safety & Inspection',
+    desc: 'BOSIET, FOET, HUET & H₂S Safety',
+    scope: 'Offshore personnel safety and inspection competence covering emergency response, helicopter escape, survival training and hazardous-gas awareness.'
+  },
+  {
+    icon: 'check',
+    name: 'Advanced & Digital Inspection',
+    desc: 'PAUT, TOFD, LRUT, PEC, GWT, DR, Robotics & UAV',
+    scope: 'Advanced and digital inspection technologies including phased-array ultrasonic testing, TOFD, long-range ultrasonic testing, pulsed eddy current, guided wave, digital radiography, robotic inspection and UAV-based inspection.'
+  }
 ];
 
 /* ============================================================
    CLIENTS / TESTIMONIALS
    ============================================================ */
-const CLIENTS = ['ADNOC','TAQA','DEWA','ENOC','Borouge','Emirates Global Aluminium','GASCO','Fertiglobe','Masdar','Dolphin Energy'];
+const CLIENTS = [
+  'Indian Oil Corporation Limited — IOCL',
+  'Hindustan Petroleum Corporation Limited — HPCL',
+  'Chennai Petroleum Corporation Limited — CPCL',
+  'NTPC Limited',
+  'Bharat Heavy Electricals Limited — BHEL',
+  'Adani Power',
+  'Nuclear Power Corporation of India Limited — NPCIL',
+  'NLC India Limited',
+  'Mangalore Refinery and Petrochemicals Limited — MRPL',
+  'Bhabha Atomic Research Centre — BARC',
+  'Indian Coast Guard',
+  'Hindustan Aeronautics Limited — HAL',
+  'National Hydroelectric Power Corporation — NHPC',
+  'Rashtriya Chemicals and Fertilizers — RCF',
+  'L&T',
+  'The Shipping Corporation of India',
+  'POSCO India',
+  'Saint-Gobain India'
+];
 
 const SECTORS = [
   {icon:'oil', label:'Oil & Gas Operators'},
@@ -175,10 +296,25 @@ const SECTORS = [
   {icon:'leaf', label:'Renewable Energy'},
 ];
 
+/* ============================================================
+   OUR CLIENT COMMITMENT
+   ============================================================ */
 const TESTIMONIALS = [
-  {q:'IAIS mobilised a full NDT crew within 48 hours for our turnaround — accurate reporting and zero schedule slippage.', n:'Maintenance Director', r:'Refining & Petrochemicals'},
-  {q:'Their rope access team handled a complex flare structure survey with excellent safety discipline and clear documentation.', n:'HSE Manager', r:'Offshore Operator'},
-  {q:'Consistent, code-compliant inspection reports that our regulators accept without a single query. A dependable partner.', n:'Asset Integrity Lead', r:'Power Generation'},
+  {
+    q: 'We understand that inspection projects must be completed safely, accurately and within demanding operational schedules. Our teams coordinate closely with clients to provide responsive mobilization, disciplined site execution, dependable technical support and clear reporting throughout every assignment.',
+    n: 'Responsive Project Support',
+    r: 'Scalable inspection personnel and equipment for planned maintenance, shutdowns and time-critical requirements.'
+  },
+  {
+    q: 'Inspection activities are delivered using approved procedures, suitable inspection equipment and qualified technical professionals, with a focus on consistent execution and technical reliability.',
+    n: 'Reliable Technical Delivery',
+    r: 'Qualified personnel, appropriate equipment and disciplined inspection practices aligned with applicable technical requirements.'
+  },
+  {
+    q: 'Our findings and inspection results are presented through clear, structured and traceable reporting to support maintenance planning, asset-integrity assessment and informed engineering decisions.',
+    n: 'Clear and Actionable Reporting',
+    r: 'Traceable findings and technical documentation designed to support effective decision-making throughout the asset lifecycle.'
+  }
 ];
 
 const TESTIMONIALS_EXT = TESTIMONIALS.concat([
@@ -281,19 +417,19 @@ date:'April 2026'
    TEAM / TIMELINE / VALUES (about.html)
    ============================================================ */
 const TEAM = [
-  {name:'Rajesh Kumar', role:'Group Managing Director', img:'https://iaisindia.com/wp-content/uploads/2026/08/faces.png'},
-  {name:'Fatima Al Suwaidi', role:'UAE Operations Director', img:'https://iaisindia.com/wp-content/uploads/2026/08/faces.png'},
-  {name:'Arjun Menon', role:'Head of Engineering & RBI', img:'https://iaisindia.com/wp-content/uploads/2026/08/faces.png'},
-  {name:'Sara Al Marzooqi', role:'QA/QC & Accreditation Lead', img:'https://iaisindia.com/wp-content/uploads/2026/08/faces.png'},
+  {name:'Selva Kumar Ikkottudurai', role:'Country Manager', img:'https://iaisindia.com/wp-content/uploads/2026/08/file_000000005cfc8211918df077cad21ea7-1.png'},
+  {name:'Saravanan Jayamani-', role:'Technical Manager- Global', img:'https://iaisindia.com/wp-content/uploads/2026/08/passport-photo-single-51x51mm.jpg'},
+  {name:'Rakesh Swain', role:'Operations Manager- Global', img:'https://iaisindia.com/wp-content/uploads/2026/08/file_000000008044821180ef7c22a3d04f3a-1.png'},
+  {name:'Raja Narasaiah', role:'Operations Manager- Global', img:'https://iaisindia.com/wp-content/uploads/2026/08/raja.png'},
 ];
 
 const TIMELINE = [
-  {y:'2005', t:'IAIS Founded in India', d:'Industrial Analysis & Inspection Services established, serving refineries and process plants across India.'},
-  {y:'2011', t:'ISO 17020 Accreditation', d:'Achieved inspection body accreditation, formalising quality across all service lines.'},
-  {y:'2015', t:'Regional Expansion Begins', d:'First projects delivered across the GCC for oil & gas and marine clients.'},
-  {y:'2019', t:'Drone & Digital Inspection Launched', d:'UAV and digital reporting capability added to complement traditional NDT.'},
-  {y:'2022', t:'IAIS UAE Established', d:'Dedicated UAE entity opened in Abu Dhabi to serve the region directly.'},
-  {y:'2026', t:'5,000+ Projects Milestone', d:'Crossed 5,000 completed projects across 25+ countries with 150+ engineers.'},
+  {y:'2005', t:'The IAIS Journey Begins', d:'Industrial Analysis & Inspection Services was established with a commitment to accurate inspection, reliable reporting and uncompromised technical integrity.'},
+  {y:'2011', t:'Quality and Inspection Systems Strengthened', d:'Structured quality systems, inspection procedures and technical controls were developed to support consistent service delivery across expanding operations.'},
+  {y:'2015', t:'International Operations Expanded', d:'IAIS began extending its inspection and technical capabilities to international projects, supporting oil and gas, power, petrochemical and marine clients.'},
+  {y:'2019', t:'Advanced Technologies Introduced', d:'Advanced NDT, automated inspection, digital reporting and specialized integrity-assessment capabilities were added to complement conventional inspection services.'},
+  {y:'2022', t:'Integrated Group Capabilities Developed', d:'The Group expanded into reference standards, flawed specimens, inspection accessories, specialized equipment, PWHT systems and customized engineering solutions.'},
+  {y:'2026', t:'IAIS UAE Regional Expansion', d:'IAIS UAE was launched to bring the Group’s two decades of experience, multidisciplinary resources and advanced inspection capabilities closer to clients across the UAE and wider GCC.'},
 ];
 
 const VALUES = [
@@ -304,11 +440,75 @@ const VALUES = [
 ];
 
 const FAQS = [
-  {q:'What areas does IAIS UAE cover?', a:'We operate across the UAE and wider GCC, with rapid mobilisation from our Abu Dhabi base to Dubai, Sharjah, Fujairah and offshore sites in the Arabian Gulf.'},
-  {q:'How quickly can a crew be mobilised?', a:'Standard NDT and rope access crews can typically be mobilised within 24-48 hours for scheduled work, and faster for emergency call-outs.'},
-  {q:'Are your technicians internationally certified?', a:'Yes — our personnel hold ASNT SNT-TC-1A, PCN, IRATA and API certifications, and our inspection body is accredited to ISO 17020.'},
-  {q:'Can IAIS UAE support turnarounds and shutdowns?', a:'Absolutely — turnaround support is a core part of our business, with scalable crew sizes and 24/7 shift coverage for planned outages.'},
-  {q:'Is IAIS UAE related to IAIS India?', a:'Yes — IAIS UAE is part of the IAIS Group, extending the inspection expertise built at iaisindia.com into the UAE and GCC market.'},
+  {
+    q: 'What makes IAIS UAE different from a conventional inspection provider?',
+    a: 'IAIS UAE combines field inspection, advanced NDT, engineering assessment and asset-integrity services within one coordinated platform. Our focus is on producing technically defensible information that helps clients manage risk, improve reliability and make informed maintenance decisions—not simply completing an inspection checklist.'
+  },
+
+  {
+    q: 'Can IAIS UAE manage a complete inspection scope from planning to final reporting?',
+    a: 'Yes. Depending on the project requirements, our support can include scope review, inspection-method selection, procedure preparation, personnel and equipment mobilisation, site inspection, data analysis, engineering evaluation and submission of traceable technical reports.'
+  },
+
+  {
+    q: 'What inspection and NDT services does IAIS UAE provide?',
+    a: 'Our capabilities cover conventional and advanced NDT, visual inspection, welding inspection, corrosion assessment, rope access inspection, asset-integrity support, pipeline and storage-tank inspection, pressure-equipment inspection, mechanical inspection and other specialist inspection requirements based on project scope.'
+  },
+
+  {
+    q: 'Can IAIS UAE support both conventional and advanced NDT requirements?',
+    a: 'Yes. Depending on the asset and damage mechanism, inspection programmes may include conventional methods as well as advanced techniques such as PAUT, TOFD, LRUT, PEC, guided-wave testing, digital radiography and other suitable technologies.'
+  },
+
+  {
+    q: 'How does IAIS UAE select the appropriate inspection technique?',
+    a: 'We consider the asset type, material, geometry, expected damage mechanisms, operating history, accessibility, inspection objectives and applicable acceptance criteria before recommending a suitable method. Where required, complementary inspection techniques may be combined to improve coverage and confidence in the results.'
+  },
+
+  {
+    q: 'Can IAIS UAE support shutdowns, turnarounds and planned maintenance projects?',
+    a: 'Yes. We can support planned maintenance, shutdown and turnaround activities with inspection personnel, equipment and technical resources appropriate to the agreed project scope, schedule and site requirements.'
+  },
+
+  {
+    q: 'Does IAIS UAE provide inspection support for difficult-access locations?',
+    a: 'Subject to project assessment and required approvals, IAIS UAE can support inspections involving confined spaces, work at height, rope access, elevated structures, storage tanks, marine assets and other restricted-access locations. Each assignment is planned around site-specific HSE requirements, access controls and permit conditions.'
+  },
+
+  {
+    q: 'Does IAIS UAE work according to international codes and client specifications?',
+    a: 'Yes. Inspection activities can be developed in accordance with applicable API, ASME, ISO, ASTM, AWS, EN, BS and other recognised industry standards, together with client specifications and statutory requirements. The governing code, inspection requirements and acceptance criteria are confirmed during the technical review stage.'
+  },
+
+  {
+    q: 'How does IAIS UAE maintain equipment accuracy and traceability?',
+    a: 'Inspection equipment is selected according to the applicable inspection method and project specification. Where required, calibration certificates, equipment identification, reference-block details and pre-use verification records are maintained to support measurement accuracy and reporting traceability.'
+  },
+
+  {
+    q: 'Can IAIS UAE recommend the most suitable inspection method?',
+    a: 'Yes. We review the asset type, material, geometry, expected damage mechanisms, operating history, accessibility and applicable acceptance criteria before recommending an inspection technique. Where necessary, multiple complementary methods may be proposed to improve inspection coverage and confidence in the results.'
+  },
+
+  {
+    q: 'What information is required to prepare a technical and commercial proposal?',
+    a: 'Clients should provide the asset type, location, material, dimensions, inspection scope, required methods, applicable codes, quantities, access conditions, operating status, schedule and expected deliverables. Drawings, photographs and previous inspection reports can also help us prepare a more accurate proposal.'
+  },
+
+  {
+    q: 'What deliverables will the client receive after an inspection?',
+    a: 'Deliverables are defined according to the agreed scope and may include inspection procedures, calibration records, field-data sheets, marked-up drawings, defect locations, measurement tables, inspection images, scan data, acceptance evaluations and a final technical report containing observations and relevant recommendations.'
+  },
+
+  {
+    q: 'How does IAIS UAE support asset-integrity and maintenance decisions?',
+    a: 'Inspection findings can be organised into clear, traceable technical information that supports defect assessment, condition evaluation, maintenance planning and asset-integrity decisions. Where included within the agreed scope, engineering evaluation can be used to provide additional technical context for identified findings.'
+  },
+
+  {
+    q: 'How does IAIS UAE ensure inspection reporting is clear and traceable?',
+    a: 'Reports are structured around the agreed inspection scope, applicable procedures and acceptance criteria. Findings can be linked to asset locations, measurements, inspection records, images, equipment details and supporting data so that the results can be reviewed and referenced during maintenance, engineering and integrity activities.'
+  }
 ];
 
 
