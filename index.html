@@ -289,10 +289,14 @@
     <div class="section-head reveal">
       <div class="eyebrow">What We Do</div>
       <h2>Our Services</h2>
-      <p>End-to-end inspection, testing and integrity solutions built for the toughest industrial environments.</p>
+      <p>Explore IAIS UAE's integrated service architecture across inspection, integrity, NDT, thermal, materials, quality and specialist technical support.</p>
     </div>
-    <div class="services-grid reveal-stagger" id="servicesGrid"></div>
-    <div style="text-align:center;margin-top:44px;"><a href="services.html" class="btn btn-outline-dark">View All Services</a></div>
+
+    <div class="services-grid reveal-stagger home-services-current" id="servicesGrid"></div>
+
+    <div style="text-align:center;margin-top:44px;">
+      <a href="services.html" class="btn btn-outline-dark">View All Services</a>
+    </div>
   </div>
 </section>
 
@@ -301,10 +305,14 @@
     <div class="section-head reveal">
       <div class="eyebrow">Sectors We Serve</div>
       <h2>Industries We Serve</h2>
-      <p>Purpose-built inspection programmes tailored to the standards and risks of each sector.</p>
+      <p>Explore 12 industrial sectors and the 96 applications and assets supported across the current IAIS UAE industry architecture.</p>
     </div>
-    <div class="industries-grid reveal-stagger" id="industriesGrid"></div>
-    <div style="text-align:center;margin-top:44px;"><a href="industries.html" class="btn btn-outline-dark">Explore All Industries</a></div>
+
+    <div class="industries-grid reveal-stagger home-industries-current" id="industriesGrid"></div>
+
+    <div style="text-align:center;margin-top:44px;">
+      <a href="industries.html" class="btn btn-outline-dark">Explore All Industries</a>
+    </div>
   </div>
 </section>
 
@@ -324,10 +332,30 @@
     <div class="section-head reveal">
       <div class="eyebrow">Track Record</div>
       <h2>Featured Projects</h2>
-      <p>A snapshot of recent inspection and integrity programmes delivered across the region.</p>
+      <p>Selected references from the current IAIS project portfolio across refinery, power, drone, marine and advanced inspection work.</p>
     </div>
+
     <div class="projects-grid reveal-stagger" id="projectsGrid"></div>
-    <div style="text-align:center;margin-top:44px;"><a href="projects.html" class="btn btn-outline-dark">View Full Portfolio</a></div>
+
+    <div style="text-align:center;margin-top:44px;">
+      <a href="projects.html" class="btn btn-outline-dark">View Full Portfolio</a>
+    </div>
+  </div>
+</section>
+
+<section id="articles" class="home-articles-section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Engineering Knowledge Centre</div>
+      <h2>Featured Technical Articles</h2>
+      <p>Selected engineering articles from the IAIS UAE technical knowledge libraries covering asset integrity, advanced NDT, tube inspection and industrial applications.</p>
+    </div>
+
+    <div class="home-articles-grid reveal-stagger" id="articlesGrid"></div>
+
+    <div style="text-align:center;margin-top:44px;">
+      <a href="articles.html" class="btn btn-outline-dark">View All Articles</a>
+    </div>
   </div>
 </section>
 
@@ -384,30 +412,58 @@
 <script src="assets/js/data.js"></script>
 <script src="assets/js/common.js"></script>
 <script>
-document.getElementById('servicesGrid').innerHTML = SERVICES.map(s => `
-  <div class="s-card">
+document.getElementById('servicesGrid').innerHTML = HOME_SERVICE_CATEGORIES.map(s => `
+  <div class="s-card home-service-card">
+    <div class="home-card-meta">
+      <span>CATEGORY ${s.no}</span>
+      <b>${s.count}</b>
+    </div>
     <div class="s-icon">${ic(s.icon)}</div>
     <h3>${s.title}</h3>
     <p>${s.short}</p>
-    <a href="services.html" class="learn">Learn more ${ic('arrow')}</a>
+    <a href="${s.href}" class="learn">Learn more ${ic('arrow')}</a>
   </div>`).join('');
 
-document.getElementById('industriesGrid').innerHTML = INDUSTRIES.map((it,i) => `
-  <div class="i-card">
+document.getElementById('industriesGrid').innerHTML = HOME_INDUSTRIES.map((it,i) => `
+  <div class="i-card home-industry-card">
     <img src="${it.img}" alt="${it.title} industry" loading="lazy">
-    <div class="label"><span class="idx">${String(i+1).padStart(2,'0')}</span><h4>${it.title}</h4></div>
-    <a href="industries.html" aria-label="View ${it.title}"></a>
+    <div class="label">
+      <span class="idx">${String(i+1).padStart(2,'0')}</span>
+      <h4>${it.title}</h4>
+      <span class="home-industry-sub">8 Applications & Assets</span>
+    </div>
+    <a href="${it.href}" aria-label="View ${it.title}"></a>
   </div>`).join('');
 
 document.getElementById('processSteps').innerHTML = PROCESS.map((p,i) => `
   <div class="p-step"><div class="circ">${String(i+1).padStart(2,'0')}</div><h4>${p.t}</h4><p>${p.d}</p></div>`).join('');
 
-document.getElementById('projectsGrid').innerHTML = PROJECTS.slice(0,3).map(p => `
-  <div class="pr-card">
-    <div class="pr-img"><img src="${p.img}" alt="${p.title}" loading="lazy"><span class="pr-tag">${p.tag}</span></div>
+document.getElementById('projectsGrid').innerHTML = HOME_FEATURED_PROJECTS.map(p => `
+  <div class="pr-card home-project-card">
+    <a class="pr-img" href="${p.href}">
+      <img src="${p.img}" alt="${p.title}" loading="lazy">
+      <span class="pr-tag">${p.tag}</span>
+    </a>
     <div class="pr-body">
-      <h4>${p.title}</h4><p>${p.desc}</p>
-      <div class="pr-meta"><span>📍 <b>${p.loc}</b></span><span>⏱ <b>${p.dur}</b></span></div>
+      <h4><a href="${p.href}">${p.title}</a></h4>
+      <p>${p.desc}</p>
+      <div class="pr-meta">
+        <span>🏭 <b>${p.client}</b></span>
+      </div>
+      <a href="${p.href}" class="home-project-more">View project ${ic('arrow')}</a>
+    </div>
+  </div>`).join('');
+
+
+document.getElementById('articlesGrid').innerHTML = HOME_FEATURED_ARTICLES.map(a => `
+  <div class="home-article-card">
+    <div class="home-article-head">
+      <span>${a.category}</span>
+    </div>
+    <div class="home-article-body">
+      <h3><a href="${a.href}">${a.title}</a></h3>
+      <p>${a.excerpt}</p>
+      <a href="${a.href}" class="learn">Read article ${ic('arrow')}</a>
     </div>
   </div>`).join('');
 

@@ -991,3 +991,254 @@ header.scrolled .brand-logo-img{
     grid-template-columns:1fr;
   }
 }
+
+/* ============================================================
+   HOME PAGE — MINIMAL UPDATE V3
+   Only styles for Services, Industries, Projects and Articles.
+   Existing homepage styling remains unchanged above.
+   ============================================================ */
+
+.home-services-current{
+  grid-template-columns:repeat(3,1fr);
+}
+
+.home-service-card{
+  min-height:310px;
+  display:flex;
+  flex-direction:column;
+}
+
+.home-service-card .learn{
+  margin-top:auto;
+}
+
+.home-card-meta{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:18px;
+}
+
+.home-card-meta span{
+  color:var(--teal);
+  font-family:var(--font-mono);
+  font-size:9.5px;
+  font-weight:700;
+  letter-spacing:.08em;
+}
+
+.home-card-meta b{
+  min-width:34px;
+  padding:5px 8px;
+  border-radius:999px;
+  color:var(--navy);
+  background:rgba(244,180,0,.13);
+  text-align:center;
+  font-family:var(--font-mono);
+  font-size:10px;
+}
+
+.home-industries-current{
+  grid-template-columns:repeat(4,1fr);
+}
+
+.home-industry-card .label{
+  padding-right:14px;
+}
+
+.home-industry-sub{
+  display:block;
+  margin-top:4px;
+  color:rgba(255,255,255,.7);
+  font-size:10px;
+}
+
+.home-project-card .pr-img{
+  display:block;
+}
+
+.home-project-card .pr-body h4 a:hover{
+  color:var(--teal);
+}
+
+.home-project-more{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  margin-top:17px;
+  color:var(--teal);
+  font-size:12px;
+  font-weight:700;
+}
+
+.home-project-more svg{
+  width:15px;
+  height:15px;
+  stroke:currentColor;
+}
+
+.home-articles-section{
+  background:var(--surface);
+}
+
+.home-articles-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+
+.home-article-card{
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:var(--surface);
+  box-shadow:var(--shadow-sm);
+  transition:.3s var(--ease);
+}
+
+.home-article-card:hover{
+  transform:translateY(-5px);
+  box-shadow:var(--shadow-md);
+}
+
+.home-article-head{
+  min-height:64px;
+  display:flex;
+  align-items:center;
+  padding:16px 20px;
+  color:#fff;
+  background:linear-gradient(135deg,var(--navy-deep),var(--teal));
+}
+
+.home-article-head span{
+  font-family:var(--font-mono);
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.home-article-body{
+  padding:22px;
+}
+
+.home-article-body h3{
+  color:var(--navy);
+  font-family:var(--font-head);
+  font-size:17px;
+  line-height:1.45;
+}
+
+.home-article-body h3 a:hover{
+  color:var(--teal);
+}
+
+.home-article-body p{
+  margin-top:10px;
+  color:var(--text-soft);
+  font-size:13.5px;
+  line-height:1.72;
+}
+
+.home-article-body .learn{
+  margin-top:18px;
+}
+
+@media(max-width:1100px){
+  .home-services-current{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .home-industries-current{
+    grid-template-columns:repeat(3,1fr);
+  }
+}
+
+@media(max-width:820px){
+  .home-industries-current{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .home-articles-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:640px){
+  .home-services-current,
+  .home-industries-current,
+  .home-articles-grid{
+    grid-template-columns:1fr;
+  }
+
+  .home-service-card{
+    min-height:0;
+  }
+}
+
+/* ============================================================
+   HOME ARTICLES — REMOVE LARGE EMPTY WHITE CARD SPACE V4
+   Only affects the Featured Technical Articles section.
+   ============================================================ */
+
+.home-articles-section{
+  padding-top:76px;
+  padding-bottom:76px;
+}
+
+.home-articles-section .section-head{
+  margin-bottom:34px;
+}
+
+.home-articles-grid{
+  align-items:start;
+  grid-auto-rows:max-content;
+}
+
+.home-article-card{
+  height:auto !important;
+  min-height:0 !important;
+  align-self:start;
+}
+
+.home-article-head{
+  min-height:58px;
+}
+
+.home-article-body{
+  height:auto !important;
+  min-height:0 !important;
+  padding:20px 22px 22px;
+}
+
+.home-article-body h3{
+  margin:0;
+}
+
+.home-article-body p{
+  margin-top:10px;
+  margin-bottom:0;
+}
+
+.home-article-body .learn{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  margin-top:16px;
+}
+
+@media(max-width:640px){
+  .home-articles-section{
+    padding-top:54px;
+    padding-bottom:54px;
+  }
+
+  .home-articles-section .section-head{
+    margin-bottom:26px;
+  }
+
+  .home-article-body{
+    padding:18px;
+  }
+}

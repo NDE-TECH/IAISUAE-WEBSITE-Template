@@ -511,5 +511,87 @@ const FAQS = [
   }
 ];
 
+/* ============================================================
+   HOME PAGE — CURRENT SERVICES / INDUSTRIES / PROJECTS / ARTICLES
+   Added only for index.html.
+   Existing SERVICES, INDUSTRIES, PROJECTS, CLIENTS, CERTS,
+   TESTIMONIALS and all other site data above remain unchanged.
+   ============================================================ */
 
+const HOME_SERVICE_CATEGORIES = [
+  {no:'01', count:15, icon:'shield', title:'Asset Integrity Management & Engineering', short:'Risk, condition, degradation and lifecycle information brought together to support integrity decisions.', href:'services.html'},
+  {no:'02', count:17, icon:'wave', title:'NDT & Advanced Inspection Services', short:'Conventional and advanced examination methods selected around material, geometry, expected damage and inspection objectives.', href:'services.html'},
+  {no:'03', count:13, icon:'thermo', title:'Tube, Heat Exchanger & Boiler Inspection', short:'Condition assessment for heat-transfer tubes, boiler components, exchangers and associated pressure parts.', href:'services.html'},
+  {no:'04', count:16, icon:'oil', title:'Storage Tank Integrity', short:'Tank floor, shell, roof, geometry, corrosion, calibration and repair-support services across the storage lifecycle.', href:'services.html'},
+  {no:'05', count:16, icon:'scale', title:'Pressure Equipment & Static Asset Integrity', short:'Inspection and condition evaluation for vessels, boilers, reactors, columns, exchangers and related static assets.', href:'services.html'},
+  {no:'06', count:16, icon:'chart', title:'Piping & Pipeline Integrity', short:'Inspection, corrosion assessment, screening, weld examination and remaining-life support for piping and pipelines.', href:'services.html'},
+  {no:'07', count:16, icon:'ship', title:'Marine, Offshore & Structural Integrity', short:'Inspection support for marine, offshore and structural assets exposed to fatigue, corrosion, loading and difficult access.', href:'services.html'},
+  {no:'08', count:15, icon:'drone', title:'Remote Access, Robotics & Digital Inspection', short:'Remote inspection using suitable access systems, robotics, UAVs and digital data-capture methods.', href:'services.html'},
+  {no:'09', count:16, icon:'flame', title:'PWHT, Heat Treatment & Thermal Services', short:'Controlled preheat, PWHT and thermal-treatment support with monitored temperature cycles and traceable records.', href:'services.html'},
+  {no:'10', count:17, icon:'micro', title:'Materials, Corrosion & Failure Analysis', short:'Materials verification, corrosion evaluation, metallurgical examination and failure-investigation support.', href:'services.html'},
+  {no:'11', count:16, icon:'check', title:'Quality, Vendor & Project Inspection', short:'Quality-surveillance and inspection support across procurement, fabrication, testing, installation and handover.', href:'services.html'},
+  {no:'12', count:14, icon:'users', title:'Technical Manpower & Specialist Deployment', short:'Specialist technical personnel and coordinated project resources deployed according to project requirements.', href:'services.html'}
+];
 
+const HOME_INDUSTRIES = [
+  {title:'Oil, Gas & LNG', img:'https://iaisindia.com/wp-content/uploads/2022/12/JOB-DONE-The-Maintenance-project-using-Rope-IRATA-technique-has-been-successful-completed-as-per-scope-of-work-client-Digboi-RefineryIndian-Oil-Corporation-Limited-Assam-India.jpeg', href:'industries.html'},
+  {title:'Refining, Petrochemical & Chemical Processing', img:'https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?q=80&w=900&auto=format&fit=crop', href:'industries.html'},
+  {title:'Power Generation', img:'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=900&auto=format&fit=crop', href:'industries.html'},
+  {title:'Water, Wastewater & Desalination', img:'https://images.unsplash.com/photo-1538300342682-cf57afb97285?q=80&w=900&auto=format&fit=crop', href:'industries.html'},
+  {title:'Marine, Shipping & Shipbuilding', img:'https://iaisindia.com/wp-content/uploads/2022/06/Marine-NDT-Inspection-and-UTM-Survey-Company-11.jpeg', href:'industries.html'},
+  {title:'Offshore, Subsea & Coastal Energy', img:'https://iaisindia.com/wp-content/uploads/2026/08/Holstein_at_Dusk-1-scaled.jpg', href:'industries.html'},
+  {title:'Manufacturing, Fabrication & OEM', img:'https://iaisindia.com/wp-content/uploads/2026/08/mauafacturing-1-1.png', href:'industries.html'},
+  {title:'Construction & Infrastructure', img:'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=900&auto=format&fit=crop', href:'industries.html'},
+  {title:'Renewable Energy & Energy Transition', img:'https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=900&auto=format&fit=crop', href:'industries.html'},
+  {title:'Mining, Metals, Minerals & Cement', img:'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=900&auto=format&fit=crop', href:'industries.html'},
+  {title:'Storage Terminals, Tank Farms & Bulk Handling', img:'https://images.unsplash.com/photo-1516937941344-00b4e0337589?q=80&w=900&auto=format&fit=crop', href:'industries.html'},
+  {title:'Utilities, District Energy & Industrial Facilities', img:'https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?q=80&w=900&auto=format&fit=crop', href:'industries.html'}
+];
+
+const HOME_FEATURED_PROJECTS = [
+  {
+    tag:'Advanced NDT',
+    title:'Refinery Health Assessment by PAUT & TOFD',
+    client:'IOCL Mathura Refinery',
+    desc:'Health assessment of refinery equipment and piping using PAUT and TOFD during maintenance and inspection shutdown work.',
+    img:'https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=900&auto=format&fit=crop',
+    href:'projects/refinery-health-assessment-by-paut-and-tofd/'
+  },
+  {
+    tag:'Drone Inspection',
+    title:'Internal and External Drone Inspection',
+    client:'Chennai Petroleum Corporation Limited',
+    desc:'Internal and external visual inspection of static equipment including columns, furnaces and stacks using industrial drones.',
+    img:'https://images.unsplash.com/photo-1508444845599-5c89863b1c44?q=80&w=900&auto=format&fit=crop',
+    href:'projects/internal-and-external-drone-inspection/'
+  },
+  {
+    tag:'Power Generation',
+    title:'Remote Field Eddy-Current Boiler-Tube Inspection',
+    client:'NTPC North Karanpura',
+    desc:'Remote field eddy-current inspection of boiler tubes in thermal power equipment to support tube-condition assessment.',
+    img:'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=900&auto=format&fit=crop',
+    href:'projects/remote-field-eddy-current-boiler-tube-inspection/'
+  }
+];
+
+const HOME_FEATURED_ARTICLES = [
+  {
+    category:'Asset Integrity',
+    title:'Asset Integrity Management: A Complete Guide for Industrial Facilities',
+    excerpt:'A structured introduction to industrial asset-integrity management and the connection between condition evidence, degradation, risk and lifecycle decisions.',
+    href:'articles/asset-integrity-management-complete-guide-industrial-facilities/'
+  },
+  {
+    category:'Advanced NDT',
+    title:'Advanced NDT: A Complete Guide for Industrial Asset Inspection',
+    excerpt:'An overview of advanced nondestructive examination and how technique selection should reflect materials, geometry, credible damage and the required decision.',
+    href:'articles/advanced-ndt-complete-guide-industrial-inspection/'
+  },
+  {
+    category:'Tube Inspection',
+    title:'Tube Inspection: A Complete Guide for Heat-Transfer Equipment',
+    excerpt:'A practical guide to tube material, expected damage, inspection technology selection, data interpretation and maintenance decisions.',
+    href:'articles/tube-inspection-complete-guide/'
+  }
+];

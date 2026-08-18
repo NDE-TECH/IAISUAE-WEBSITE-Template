@@ -32,6 +32,21 @@
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "CollectionPage", "name": "IAIS UAE Services", "url": "https://iaisuae.com/services.html", "description": "IAIS UAE industrial inspection, asset integrity, NDT, PWHT, materials, quality and specialist manpower service architecture.", "isPartOf": {"@type": "WebSite", "name": "IAIS UAE", "url": "https://iaisuae.com/"}}
 </script>
+<script>
+(function(){
+  var navLinks = document.querySelectorAll('.desktop-nav a');
+  var currentPage = window.location.pathname.split('/').pop() || 'index.html';
+
+  navLinks.forEach(function(link){
+    var linkPage = link.getAttribute('href');
+    if (linkPage === currentPage) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+})();
+</script>
 </head>
 <body id="top">
 <header id="siteHeader">
@@ -40,7 +55,17 @@
 <img alt="IAIS UAE" src="https://iaisindia.com/wp-content/uploads/2026/08/iaisuae.png"/>
 </a>
 <nav aria-label="Primary navigation" class="desktop-nav">
-<a class="" href="index.html">Home</a><a class="" href="about.html">About</a><a class="active" href="services.html">Services</a><a class="" href="industries.html">Industries</a><a class="" href="projects.html">Projects</a><a class="" href="certifications.html">Certifications</a><a class="" href="clients.html">Clients</a><a class="" href="careers.html">Careers</a><a class="" href="news.html">News &amp; Insights</a><a class="" href="contact.html">Contact</a>
+  <a class="" href="index.html">Home</a>
+  <a class="" href="about.html">About</a>
+  <a class="active" href="services.html">Services</a>
+  <a class="" href="industries.html">Industries</a>
+  <a class="" href="projects.html">Projects</a>
+  <a class="" href="articles.html">Articles</a>
+  <a class="" href="certifications.html">Certifications</a>
+  <a class="" href="clients.html">Clients</a>
+  <a class="" href="careers.html">Careers</a>
+  <a class="" href="news.html">News &amp; Insights</a>
+  <a class="" href="contact.html">Contact</a>
 </nav>
 <div class="header-actions">
 <a class="btn btn-outline header-quote" href="contact.html">Get a Quote</a>

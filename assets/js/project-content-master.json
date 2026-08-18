@@ -1,0 +1,326 @@
+[
+  {
+    "number": 1,
+    "title": "Refinery Health Assessment by PAUT & TOFD",
+    "client": "IOCL Mathura Refinery, India",
+    "scope": "Health assessment of refinery equipment and piping using PAUT and TOFD during the 2024–2025 maintenance and inspection shutdown.",
+    "capabilities": [
+      "PAUT",
+      "TOFD",
+      "Refinery Shutdown",
+      "Asset Integrity"
+    ],
+    "significance": "This is one of the strongest projects because it combines a major refinery, advanced NDT and shutdown execution.",
+    "sector": "Refinery & Petrochemical",
+    "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=88&w=1600&auto=format&fit=crop",
+    "slug": "refinery-health-assessment-by-paut-and-tofd",
+    "route": "projects/refinery-health-assessment-by-paut-and-tofd/",
+    "canonical": "https://iaisuae.com/projects/refinery-health-assessment-by-paut-and-tofd/"
+  },
+  {
+    "number": 2,
+    "title": "In-Service Reactor and Piping Inspection",
+    "client": "IOCL Panipat Refinery, India",
+    "scope": "PAUT and TOFD examination of in-service reactors and piping installed at the refinery.",
+    "capabilities": [
+      "In-Service Inspection",
+      "Reactors",
+      "Process Piping",
+      "PAUT/TOFD"
+    ],
+    "significance": "This carries strong relevance for refineries, petrochemical plants and process facilities in the UAE.",
+    "sector": "Refinery & Petrochemical",
+    "image": "https://images.unsplash.com/photo-1565043666747-69f6646db940?q=88&w=1600&auto=format&fit=crop",
+    "slug": "in-service-reactor-and-piping-inspection",
+    "route": "projects/in-service-reactor-and-piping-inspection/",
+    "canonical": "https://iaisuae.com/projects/in-service-reactor-and-piping-inspection/"
+  },
+  {
+    "number": 3,
+    "title": "EMAT-UTG of Refinery Equipment and Piping",
+    "client": "HPCL Visakh Refinery, India",
+    "scope": "Electromagnetic acoustic transducer ultrasonic thickness gauging of critical equipment and piping for pre-turnaround assessment.",
+    "capabilities": [
+      "EMAT-UTG",
+      "Corrosion Assessment",
+      "Equipment",
+      "Piping"
+    ],
+    "significance": "This demonstrates specialized inspection technology beyond conventional ultrasonic thickness measurement.",
+    "sector": "Refinery & Petrochemical",
+    "image": "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=88&w=1600&auto=format&fit=crop",
+    "slug": "emat-utg-of-refinery-equipment-and-piping",
+    "route": "projects/emat-utg-of-refinery-equipment-and-piping/",
+    "canonical": "https://iaisuae.com/projects/emat-utg-of-refinery-equipment-and-piping/"
+  },
+  {
+    "number": 4,
+    "title": "Advanced NDT at an LPG Terminal",
+    "client": "HPCL Visakh LPG Terminal, India",
+    "scope": "Advanced nondestructive examination of an aboveground LPG storage bullet.",
+    "capabilities": [
+      "Advanced NDT",
+      "LPG Storage",
+      "Pressure Vessel",
+      "Integrity Assessment"
+    ],
+    "significance": "This is highly relevant to UAE terminals, gas facilities and petroleum-storage operations.",
+    "sector": "Refinery & Petrochemical",
+    "image": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=88&w=1600&auto=format&fit=crop",
+    "slug": "advanced-ndt-at-an-lpg-terminal",
+    "route": "projects/advanced-ndt-at-an-lpg-terminal/",
+    "canonical": "https://iaisuae.com/projects/advanced-ndt-at-an-lpg-terminal/"
+  },
+  {
+    "number": 5,
+    "title": "Internal and External Drone Inspection",
+    "client": "Chennai Petroleum Corporation Limited, India",
+    "scope": "Internal and external visual inspection of static equipment, including columns, furnaces and stacks, using industrial drones.",
+    "capabilities": [
+      "Indoor Drone",
+      "Outdoor Drone",
+      "Static Equipment",
+      "Remote Inspection"
+    ],
+    "significance": "This project communicates innovation, restricted-access inspection and improved inspection safety.",
+    "sector": "Refinery & Petrochemical",
+    "image": "https://images.unsplash.com/photo-1508444845599-5c89863b1c44?q=88&w=1600&auto=format&fit=crop",
+    "slug": "internal-and-external-drone-inspection",
+    "route": "projects/internal-and-external-drone-inspection/",
+    "canonical": "https://iaisuae.com/projects/internal-and-external-drone-inspection/"
+  },
+  {
+    "number": 6,
+    "title": "Coal Bunker Inspection Using Drone Technology",
+    "client": "Adani Power, Mundra Thermal Power Plant, India",
+    "scope": "Inspection of multiple coal-bunker liners using drone technology during planned shutdowns.",
+    "capabilities": [
+      "Drone Inspection",
+      "Confined Assets",
+      "Liner Inspection",
+      "Shutdown Support"
+    ],
+    "significance": "This demonstrates the ability to inspect difficult and potentially hazardous internal spaces remotely.",
+    "sector": "Power Generation",
+    "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=88&w=1600&auto=format&fit=crop",
+    "slug": "coal-bunker-inspection-using-drone-technology",
+    "route": "projects/coal-bunker-inspection-using-drone-technology/",
+    "canonical": "https://iaisuae.com/projects/coal-bunker-inspection-using-drone-technology/"
+  },
+  {
+    "number": 7,
+    "title": "Remote Field Eddy-Current Boiler-Tube Inspection",
+    "client": "NTPC North Karanpura Super Thermal Power Project, India",
+    "scope": "Remote field eddy-current testing of boiler tubes in 660 MW thermal power units.",
+    "capabilities": [
+      "RFET",
+      "Boiler Tubes",
+      "Power Generation",
+      "Tube Integrity"
+    ],
+    "significance": "RFET is a specialized electromagnetic inspection method and adds strong technical depth to the portfolio.",
+    "sector": "Power Generation",
+    "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=88&w=1600&auto=format&fit=crop",
+    "slug": "remote-field-eddy-current-boiler-tube-inspection",
+    "route": "projects/remote-field-eddy-current-boiler-tube-inspection/",
+    "canonical": "https://iaisuae.com/projects/remote-field-eddy-current-boiler-tube-inspection/"
+  },
+  {
+    "number": 8,
+    "title": "Condenser and Heat-Exchanger Tube Inspection",
+    "client": "NTPC Vindhyachal Super Thermal Power Station, India",
+    "scope": "Eddy-current testing of condenser tubes and low- and high-pressure heater tubes in 210 MW and 500 MW units.",
+    "capabilities": [
+      "ECT",
+      "Condenser",
+      "LPH/HPH",
+      "Heat Exchanger Tubes"
+    ],
+    "significance": "This represents large-scale tube-inspection capability applicable to power, desalination, petrochemical and process facilities.",
+    "sector": "Power Generation",
+    "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=88&w=1600&auto=format&fit=crop",
+    "slug": "condenser-and-heat-exchanger-tube-inspection",
+    "route": "projects/condenser-and-heat-exchanger-tube-inspection/",
+    "canonical": "https://iaisuae.com/projects/condenser-and-heat-exchanger-tube-inspection/"
+  },
+  {
+    "number": 9,
+    "title": "APR Inspection of HP Heater and Condenser Tubes",
+    "client": "Adani Power, India",
+    "scope": "Inspection of high-pressure heater and condenser tubes using acoustic pulse reflectometry during planned unit maintenance.",
+    "capabilities": [
+      "APR",
+      "Tube Inspection",
+      "HP Heaters",
+      "Condensers"
+    ],
+    "significance": "This is valuable because it demonstrates an alternative tube-inspection technology alongside ECT, RFET and IRIS.",
+    "sector": "Power Generation",
+    "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=88&w=1600&auto=format&fit=crop",
+    "slug": "apr-inspection-of-hp-heater-and-condenser-tubes",
+    "route": "projects/apr-inspection-of-hp-heater-and-condenser-tubes/",
+    "canonical": "https://iaisuae.com/projects/apr-inspection-of-hp-heater-and-condenser-tubes/"
+  },
+  {
+    "number": 10,
+    "title": "PAUT of Boiler-Tube and Piping Welds",
+    "client": "NTECL Vallur Thermal Power Project, India",
+    "scope": "Phased-array ultrasonic inspection of boiler-tube and piping weld joints during unit overhauling.",
+    "capabilities": [
+      "PAUT",
+      "Boiler Welds",
+      "Piping Welds",
+      "Overhaul Support"
+    ],
+    "significance": "This showcases advanced weld examination in a high-temperature power-plant environment.",
+    "sector": "Power Generation",
+    "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=88&w=1600&auto=format&fit=crop",
+    "slug": "paut-of-boiler-tube-and-piping-welds",
+    "route": "projects/paut-of-boiler-tube-and-piping-welds/",
+    "canonical": "https://iaisuae.com/projects/paut-of-boiler-tube-and-piping-welds/"
+  },
+  {
+    "number": 11,
+    "title": "Annual Rope-Access Inspection of Storage Tanks",
+    "client": "IOCL Gujarat Refinery, India",
+    "scope": "Annual-rate contract for inspection and ultrasonic gauging of insulated storage tanks using rope-access methods.",
+    "capabilities": [
+      "Rope Access",
+      "Storage Tanks",
+      "UT Gauging",
+      "External Inspection"
+    ],
+    "significance": "This has direct relevance to UAE refineries, tank farms, terminals and bulk-storage facilities.",
+    "sector": "Refinery & Petrochemical",
+    "image": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=88&w=1600&auto=format&fit=crop",
+    "slug": "annual-rope-access-inspection-of-storage-tanks",
+    "route": "projects/annual-rope-access-inspection-of-storage-tanks/",
+    "canonical": "https://iaisuae.com/projects/annual-rope-access-inspection-of-storage-tanks/"
+  },
+  {
+    "number": 12,
+    "title": "Fire-Water System Maintenance by Rope Access",
+    "client": "IOCL Panipat Refinery, India",
+    "scope": "Maintenance of fire-water sprinkler nozzles, sprinkler lines and foam-pourer systems using industrial rope access.",
+    "capabilities": [
+      "Rope Access",
+      "Fire-Water Systems",
+      "Maintenance",
+      "Refinery Support"
+    ],
+    "significance": "This demonstrates the Group’s ability to integrate inspection, access and maintenance support.",
+    "sector": "Refinery & Petrochemical",
+    "image": "https://images.unsplash.com/photo-1513828583688-c52646db42da?q=88&w=1600&auto=format&fit=crop",
+    "slug": "fire-water-system-maintenance-by-rope-access",
+    "route": "projects/fire-water-system-maintenance-by-rope-access/",
+    "canonical": "https://iaisuae.com/projects/fire-water-system-maintenance-by-rope-access/"
+  },
+  {
+    "number": 13,
+    "title": "Marine Upper-Deck Equipment Load Testing",
+    "client": "Indian Coast Guard – ICGS Vigraha, India",
+    "scope": "Inspection and load testing of upper-deck equipment in accordance with applicable technical requirements.",
+    "capabilities": [
+      "Marine Inspection",
+      "Load Testing",
+      "Deck Equipment",
+      "Certification"
+    ],
+    "significance": "This is the most suitable authentic marine project for replacing the unsupported hull and ballast-tank project currently displayed.",
+    "sector": "Marine",
+    "image": "https://iaisindia.com/wp-content/uploads/2022/06/Marine-NDT-Inspection-and-UTM-Survey-Company-11.jpeg",
+    "slug": "marine-upper-deck-equipment-load-testing",
+    "route": "projects/marine-upper-deck-equipment-load-testing/",
+    "canonical": "https://iaisuae.com/projects/marine-upper-deck-equipment-load-testing/"
+  },
+  {
+    "number": 14,
+    "title": "Lifting Equipment and Pressure-Vessel Certification",
+    "client": "NHPC Teesta Low Dam Power Station, India",
+    "scope": "Testing and certification of lifting tools, tackles and pressure vessels installed at the powerhouse and barrage.",
+    "capabilities": [
+      "Lifting Inspection",
+      "Load Testing",
+      "Pressure Vessels",
+      "Certification"
+    ],
+    "significance": "This supports IAIS UAE’s lifting-equipment, statutory inspection and industrial-safety positioning.",
+    "sector": "Power Generation",
+    "image": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=88&w=1600&auto=format&fit=crop",
+    "slug": "lifting-equipment-and-pressure-vessel-certification",
+    "route": "projects/lifting-equipment-and-pressure-vessel-certification/",
+    "canonical": "https://iaisuae.com/projects/lifting-equipment-and-pressure-vessel-certification/"
+  },
+  {
+    "number": 15,
+    "title": "PWHT of Splitter Columns",
+    "client": "BHEL Visakhapatnam, India",
+    "scope": "Post-weld heat treatment of splitter columns at the BHEL project site.",
+    "capabilities": [
+      "PWHT",
+      "Columns",
+      "Thermal Engineering",
+      "Controlled Heat Treatment"
+    ],
+    "significance": "This is important because it demonstrates capability beyond inspection and supports the proposed UAE PWHT business activity.",
+    "sector": "PWHT & Thermal",
+    "image": "https://iaisindia.com/wp-content/uploads/2022/09/Our-team-performing-PWHT-of-Large-Impeller-at-Howden-India..jpg",
+    "slug": "pwht-of-splitter-columns",
+    "route": "projects/pwht-of-splitter-columns/",
+    "canonical": "https://iaisuae.com/projects/pwht-of-splitter-columns/"
+  },
+  {
+    "number": 16,
+    "title": "Shutdown NDT Services",
+    "client": "Mangalore Refinery and Petrochemicals Limited, India",
+    "scope": "Multidisciplinary nondestructive-testing services during a scheduled refinery shutdown.",
+    "capabilities": [
+      "Shutdown NDT",
+      "Refinery Inspection",
+      "Multidisciplinary Crew",
+      "Turnaround Support"
+    ],
+    "significance": "This demonstrates the ability to mobilize personnel and equipment for time-critical refinery shutdowns.",
+    "sector": "Refinery & Petrochemical",
+    "image": "https://images.unsplash.com/photo-1513828583688-c52646db42da?q=88&w=1600&auto=format&fit=crop",
+    "slug": "shutdown-ndt-services",
+    "route": "projects/shutdown-ndt-services/",
+    "canonical": "https://iaisuae.com/projects/shutdown-ndt-services/"
+  },
+  {
+    "number": 17,
+    "title": "Pressure-Vessel Inspection and Certification",
+    "client": "IOCL Bongaigaon Refinery, India",
+    "scope": "Inspection and certification of pressure vessels in accordance with the applicable factories rules.",
+    "capabilities": [
+      "Pressure Vessels",
+      "Regulatory Inspection",
+      "Certification",
+      "Refinery Assets"
+    ],
+    "significance": "This provides strong statutory and mechanical-integrity credentials.",
+    "sector": "Refinery & Petrochemical",
+    "image": "https://images.unsplash.com/photo-1565043666747-69f6646db940?q=88&w=1600&auto=format&fit=crop",
+    "slug": "pressure-vessel-inspection-and-certification",
+    "route": "projects/pressure-vessel-inspection-and-certification/",
+    "canonical": "https://iaisuae.com/projects/pressure-vessel-inspection-and-certification/"
+  },
+  {
+    "number": 18,
+    "title": "Corrosion Mapping of Boiler Water-Wall Tubes",
+    "client": "NTPC Kahalgaon, India",
+    "scope": "Corrosion mapping of water-wall tubes in a 210 MW thermal-power boiler.",
+    "capabilities": [
+      "Corrosion Mapping",
+      "Boiler Tubes",
+      "Wall-Loss Assessment",
+      "Power Plant"
+    ],
+    "significance": "This clearly communicates quantitative corrosion assessment of high-temperature assets.",
+    "sector": "Power Generation",
+    "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=88&w=1600&auto=format&fit=crop",
+    "slug": "corrosion-mapping-of-boiler-water-wall-tubes",
+    "route": "projects/corrosion-mapping-of-boiler-water-wall-tubes/",
+    "canonical": "https://iaisuae.com/projects/corrosion-mapping-of-boiler-water-wall-tubes/"
+  }
+]
