@@ -7,11 +7,12 @@ const NAV = [
   {href:'services.html', label:'Services'},
   {href:'industries.html', label:'Industries'},
   {href:'projects.html', label:'Projects'},
-  {href:'news.html', label:'News'},
+  
   {href:'articles.html', label:'Articles'},
   {href:'clients.html', label:'Clients'},
   {href:'careers.html', label:'Careers'},
-  {href:'news.html', label:'News & Insights'},
+  {href:'Certifications.html', label:'Certification'},
+
   {href:'contact.html', label:'Contact'},
 ];
 
@@ -51,10 +52,7 @@ function renderHeader(){
         ).join('')}
       </nav>
 
-      <div class="nav-actions">
-        <a href="about.html" class="btn btn-outline">
-          As has above
-        </a>
+     
 
         <a href="contact.html" class="btn btn-primary">
           Contact Us
@@ -104,9 +102,9 @@ function renderFooter(){
 </a>
           <p>Industrial inspection, NDT and asset integrity services across the UAE and GCC — precision engineering for critical infrastructure, backed by the IAIS Group.</p>
           <div class="footer-social">
-            <a href="#" aria-label="LinkedIn">${ic('users')}</a>
-            <a href="#" aria-label="Website">${ic('globe')}</a>
-            <a href="mailto:info@iaisuae.com" aria-label="Email">${ic('mail')}</a>
+            <a href="https://www.linkedin.com/company/pwhtsolutions/posts/?feedView=all" aria-label="LinkedIn">${ic('users')}</a>
+            <a href="https://iaisindia.com/" aria-label="Website">${ic('globe')}</a>
+            <a href="mailto:i@iaisuae.com" aria-label="Email">${ic('mail')}</a>
           </div>
         </div>
         <div class="footer-col">
@@ -126,7 +124,7 @@ function renderFooter(){
             <li><a href="projects.html">Projects</a></li>
             <li><a href="certifications.html">Certifications</a></li>
             <li><a href="careers.html">Careers</a></li>
-            <li><a href="news.html">News &amp; Insights</a></li>
+            <li><a href="articles.html">Articles</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -134,7 +132,7 @@ function renderFooter(){
           <ul>
             <li><a href="contact.html">Musaffah Industrial Area, Abu Dhabi</a></li>
             <li><a href="tel:+91 9384127579">+91 93841 27579</a></li>
-            <li><a href="mailto:info@iaisuae.com">i@iaisindia.com
+            <li><a href="mailto:i@iaisuae.com">i@iaisuae.com
 </a></li>
           </ul>
         </div>

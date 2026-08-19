@@ -417,11 +417,26 @@ date:'April 2026'
    TEAM / TIMELINE / VALUES (about.html)
    ============================================================ */
 const TEAM = [
-  {name:'Selva Kumar Ikkottudurai', role:'Country Manager', img:'https://iaisindia.com/wp-content/uploads/2026/08/file_000000005cfc8211918df077cad21ea7-1.png'},
-  {name:'Saravanan Jayamani-', role:'Technical Manager- Global', img:'https://iaisindia.com/wp-content/uploads/2026/08/passport-photo-single-51x51mm.jpg'},
-  {name:'Rakesh Swain', role:'Operations Manager- Global', img:'https://iaisindia.com/wp-content/uploads/2026/08/file_000000008044821180ef7c22a3d04f3a-1.png'},
-  {name:'Raja Narasaiah', role:'Operations Manager- Global', img:'https://iaisindia.com/wp-content/uploads/2026/08/raja.png'},
+  {name:'Selva Kumar Ikkottudurai', role:'Country Manager', img:'https://iaisindia.com/wp-content/uploads/2026/08/file_000000005cfc8211918df077cad21ea7.png'},
+  {name:'Saravanan Jayamani-', role:'Technical Manager- Global', img:'https://iaisindia.com/wp-content/uploads/2026/08/file_0000000033188211956a87ee8d0e480e.png', pos:'top 8% center'},
+  {name:'Rakesh Swain', role:'Operations Manager- Global', img:'https://iaisindia.com/wp-content/uploads/2026/08/file_000000008044821180ef7c22a3d04f3a.png'},
+  {name:'Raja Narasaiah', role:'Operations Manager- Global', img:'https://iaisindia.com/wp-content/uploads/2026/08/file_00000000016482119de2f88f61dbcdae-1.png', pos:'top 8% center'},
 ];
+
+const teamGridEl = document.getElementById('teamGrid');
+if (teamGridEl) {
+  teamGridEl.innerHTML = TEAM.map(p => `
+    <div class="team-card">
+      <div class="team-photo">
+        <img src="${p.img}" alt="${p.name}" style="object-position:${p.pos || 'center'};">
+      </div>
+      <div class="tc-body">
+        <h4>${p.name}</h4>
+        <span>${p.role}</span>
+      </div>
+    </div>
+  `).join('');
+}
 
 const TIMELINE = [
   {y:'2005', t:'The IAIS Journey Begins', d:'Industrial Analysis & Inspection Services was established with a commitment to accurate inspection, reliable reporting and uncompromised technical integrity.'},
