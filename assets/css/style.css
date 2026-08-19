@@ -1253,3 +1253,289 @@ header.scrolled .brand-logo-img{
     padding:18px;
   }
 }
+
+/* ============================================================
+   IAIS UAE — MOBILE DRAWER NAVIGATION V5
+   Screenshot-style mobile menu:
+   - right-side drawer
+   - logo + round close button
+   - divided menu rows
+   - full-width quote button
+   ============================================================ */
+
+.mobile-nav-backdrop{
+  position:fixed;
+  inset:0;
+  z-index:1035;
+
+  background:rgba(0,15,24,.58);
+
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+
+  transition:
+    opacity .3s ease,
+    visibility .3s ease;
+}
+
+.mobile-nav-backdrop.show{
+  opacity:1;
+  visibility:visible;
+  pointer-events:auto;
+}
+
+
+@media (max-width:1200px){
+
+  .mobile-nav{
+    position:fixed;
+
+    top:8px;
+    right:8px;
+    bottom:8px;
+    left:auto;
+
+    z-index:1050;
+
+    width:min(380px, calc(100vw - 16px));
+    height:auto;
+
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    justify-content:flex-start;
+
+    gap:0;
+
+    padding:0 18px 22px;
+
+    overflow-y:auto;
+    overflow-x:hidden;
+
+    border:1px solid rgba(255,255,255,.18);
+    border-radius:12px;
+
+    background:#002F45;
+
+    box-shadow:
+      -18px 0 50px rgba(0,0,0,.28);
+
+    transform:translateX(calc(100% + 26px));
+
+    visibility:hidden;
+
+    transition:
+      transform .38s var(--ease),
+      visibility .38s;
+  }
+
+  .mobile-nav.open{
+    transform:translateX(0);
+    visibility:visible;
+  }
+
+
+  .mobile-nav-head{
+    min-height:82px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:18px;
+
+    padding:10px 0 12px;
+
+    border-bottom:
+      1px solid rgba(255,255,255,.09);
+  }
+
+
+  .mobile-nav-logo{
+    display:block;
+
+    width:138px;
+
+    flex:0 0 auto;
+  }
+
+  .mobile-nav-logo img{
+    width:100%;
+    height:auto;
+
+    display:block;
+
+    object-fit:contain;
+  }
+
+
+  .mobile-nav-close{
+    position:relative;
+
+    width:42px;
+    height:42px;
+
+    flex:0 0 auto;
+
+    border:
+      1px solid rgba(255,255,255,.28);
+
+    border-radius:50%;
+
+    background:
+      rgba(255,255,255,.025);
+
+    transition:
+      background .2s ease,
+      border-color .2s ease;
+  }
+
+  .mobile-nav-close:hover{
+    background:
+      rgba(255,255,255,.08);
+
+    border-color:
+      rgba(255,255,255,.55);
+  }
+
+  .mobile-nav-close span{
+    position:absolute;
+
+    left:50%;
+    top:50%;
+
+    width:15px;
+    height:2px;
+
+    border-radius:2px;
+
+    background:#fff;
+  }
+
+  .mobile-nav-close span:first-child{
+    transform:
+      translate(-50%,-50%)
+      rotate(45deg);
+  }
+
+  .mobile-nav-close span:last-child{
+    transform:
+      translate(-50%,-50%)
+      rotate(-45deg);
+  }
+
+
+  .mobile-nav-links{
+    display:flex;
+    flex-direction:column;
+
+    width:100%;
+
+    padding-top:14px;
+  }
+
+  .mobile-nav-links a{
+    min-height:45px;
+
+    display:flex;
+    align-items:center;
+
+    width:100%;
+
+    padding:11px 2px;
+
+    border-bottom:
+      1px solid rgba(255,255,255,.07);
+
+    color:#fff;
+
+    font-family:var(--font-head);
+    font-size:14px;
+    font-weight:600;
+
+    text-align:left;
+
+    transition:
+      color .2s ease,
+      padding-left .2s ease;
+  }
+
+  .mobile-nav-links a:hover,
+  .mobile-nav-links a.active{
+    color:var(--teal-light);
+
+    padding-left:7px;
+  }
+
+
+  .mobile-nav-cta{
+    width:100%;
+
+    margin-top:26px;
+  }
+
+  .mobile-nav-cta .btn{
+    width:100%;
+    min-height:44px;
+
+    padding:11px 18px;
+
+    border-radius:8px;
+
+    font-size:12.5px;
+    font-weight:700;
+
+    background:#0AA8AD;
+
+    box-shadow:none;
+  }
+
+  .mobile-nav-cta .btn:hover{
+    background:#00A3A3;
+
+    transform:none;
+  }
+
+
+  body.menu-open{
+    overflow:hidden;
+  }
+
+}
+
+
+@media (max-width:480px){
+
+  .mobile-nav{
+    top:4px;
+    right:4px;
+    bottom:4px;
+
+    width:calc(100vw - 8px);
+
+    padding-left:18px;
+    padding-right:18px;
+
+    border-radius:9px;
+  }
+
+  .mobile-nav-head{
+    min-height:78px;
+  }
+
+  .mobile-nav-logo{
+    width:135px;
+  }
+
+  .mobile-nav-links a{
+    min-height:45px;
+
+    font-size:14px;
+  }
+
+  .mobile-nav-cta{
+    margin-top:25px;
+  }
+
+}

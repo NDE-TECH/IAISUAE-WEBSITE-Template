@@ -11,7 +11,7 @@ const NAV = [
   {href:'articles.html', label:'Articles'},
   {href:'clients.html', label:'Clients'},
   {href:'careers.html', label:'Careers'},
-  {href:'Certifications.html', label:'Certification'},
+  {href:'certifications.html', label:'Certification'},
 
   {href:'contact.html', label:'Contact'},
 ];
@@ -22,7 +22,7 @@ function currentPage(){
 }
 
 function renderHeader(){
-  const cur = currentPage();
+  const cur = activeNavPage();
   const el = document.getElementById('site-header');
 
   if(!el) return;
@@ -31,30 +31,37 @@ function renderHeader(){
   <header id="siteHeader">
     <div class="container nav-wrap">
 
-      <a href="index.html"
-         class="logo company-logo"
-         aria-label="IAIS UAE Home">
-
+      <a
+        href="index.html"
+        class="logo company-logo"
+        aria-label="IAIS UAE Home"
+      >
         <img
           src="https://iaisindia.com/wp-content/uploads/2026/08/IAIS_UAE_Final_Logo-scaled.png"
-          alt="IAIS India - IAIS UAE"
+          alt="IAIS UAE"
           class="header-logo-img"
         >
-
       </a>
 
-      <nav class="nav-links">
+      <nav
+        class="nav-links"
+        aria-label="Primary navigation"
+      >
         ${NAV.map(n =>
-          `<a href="${n.href}"
-              class="${n.href===cur?'active':''}">
-              ${n.label}
+          `<a
+             href="${n.href}"
+             class="${n.href === cur ? 'active' : ''}"
+           >
+             ${n.label}
            </a>`
         ).join('')}
       </nav>
 
-     
-
-        <a href="contact.html" class="btn btn-primary">
+      <div class="nav-actions">
+        <a
+          href="contact.html"
+          class="btn btn-primary"
+        >
           Contact Us
         </a>
       </div>
@@ -62,7 +69,11 @@ function renderHeader(){
       <button
         class="burger"
         id="burgerBtn"
-        aria-label="Open menu">
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobileNav"
+      >
         <span></span>
         <span></span>
         <span></span>
@@ -71,15 +82,66 @@ function renderHeader(){
     </div>
   </header>
 
-  <div class="mobile-nav" id="mobileNav">
-    ${NAV.map(n =>
-      `<a href="${n.href}">${n.label}</a>`
-    ).join('')}
+  <div
+    class="mobile-nav-backdrop"
+    id="mobileNavBackdrop"
+  ></div>
 
-    <a href="contact.html" class="btn btn-gold">
-      Get a Quote
-    </a>
-  </div>`;
+  <aside
+    class="mobile-nav"
+    id="mobileNav"
+    aria-hidden="true"
+  >
+
+    <div class="mobile-nav-head">
+
+      <a
+        href="index.html"
+        class="mobile-nav-logo"
+        aria-label="IAIS UAE Home"
+      >
+        <img
+          src="https://iaisindia.com/wp-content/uploads/2026/08/IAIS_UAE_Final_Logo-scaled.png"
+          alt="IAIS UAE"
+        >
+      </a>
+
+      <button
+        class="mobile-nav-close"
+        id="mobileCloseBtn"
+        type="button"
+        aria-label="Close menu"
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+    <nav
+      class="mobile-nav-links"
+      aria-label="Mobile navigation"
+    >
+      ${NAV.map(n =>
+        `<a
+           href="${n.href}"
+           class="${n.href === cur ? 'active' : ''}"
+         >
+           ${n.label}
+         </a>`
+      ).join('')}
+    </nav>
+
+    <div class="mobile-nav-cta">
+      <a
+        href="contact.html"
+        class="btn btn-primary"
+      >
+        Request a Quote
+      </a>
+    </div>
+
+  </aside>`;
 }
 
 function renderFooter(){
@@ -180,15 +242,63 @@ function initChrome(){
 
   const burger = document.getElementById('burgerBtn');
   const mobileNav = document.getElementById('mobileNav');
+  const mobileCloseBtn = document.getElementById('mobileCloseBtn');
+  const mobileNavBackdrop = document.getElementById('mobileNavBackdrop');
+
+  function openMobileMenu(){
+    if(!burger || !mobileNav) return;
+
+    mobileNav.classList.add('open');
+    document.body.classList.add('menu-open');
+
+    burger.setAttribute('aria-expanded', 'true');
+    mobileNav.setAttribute('aria-hidden', 'false');
+
+    if(mobileNavBackdrop){
+      mobileNavBackdrop.classList.add('show');
+    }
+  }
+
+  function closeMobileMenu(){
+    if(!burger || !mobileNav) return;
+
+    mobileNav.classList.remove('open');
+    document.body.classList.remove('menu-open');
+
+    burger.setAttribute('aria-expanded', 'false');
+    mobileNav.setAttribute('aria-hidden', 'true');
+
+    if(mobileNavBackdrop){
+      mobileNavBackdrop.classList.remove('show');
+    }
+  }
+
   if(burger && mobileNav){
     burger.addEventListener('click', () => {
-      mobileNav.classList.toggle('open');
-      document.body.classList.toggle('menu-open');
+      if(mobileNav.classList.contains('open')){
+        closeMobileMenu();
+      }else{
+        openMobileMenu();
+      }
     });
-    mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-      mobileNav.classList.remove('open');
-      document.body.classList.remove('menu-open');
-    }));
+
+    if(mobileCloseBtn){
+      mobileCloseBtn.addEventListener('click', closeMobileMenu);
+    }
+
+    if(mobileNavBackdrop){
+      mobileNavBackdrop.addEventListener('click', closeMobileMenu);
+    }
+
+    mobileNav.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', closeMobileMenu);
+    });
+
+    document.addEventListener('keydown', e => {
+      if(e.key === 'Escape'){
+        closeMobileMenu();
+      }
+    });
   }
 
   // Scroll reveal
