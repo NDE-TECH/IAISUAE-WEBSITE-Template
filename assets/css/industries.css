@@ -3099,6 +3099,576 @@ button{color:inherit}
     opacity:1 !important;
   }
 }
+
+/* ============================================================
+   IAIS UAE — SHARED HOME/SERVICES HEADER MATCH V10
+   Desktop navigation matches the Home page method.
+   Only header/navigation presentation is changed.
+   ============================================================ */
+
+#siteHeader{
+  padding:14px 0;
+}
+
+#siteHeader.scrolled{
+  padding:9px 0;
+}
+
+#siteHeader .container{
+  width:min(1820px, calc(100% - 64px));
+}
+
+#siteHeader .nav-wrap{
+  min-height:76px;
+  gap:28px;
+}
+
+#siteHeader .brand{
+  width:230px;
+  flex:0 0 auto;
+}
+
+#siteHeader .brand img{
+  width:100%;
+  max-height:78px;
+  object-fit:contain;
+}
+
+#siteHeader .desktop-nav{
+  flex:1;
+  justify-content:center;
+  gap:clamp(18px,1.35vw,29px);
+}
+
+#siteHeader .desktop-nav a{
+  padding:12px 0 10px;
+  font-size:14px;
+  font-weight:600;
+}
+
+#siteHeader .desktop-nav a.active::after{
+  height:3px;
+}
+
+#siteHeader .header-actions{
+  margin-left:10px;
+}
+
+#siteHeader .header-contact{
+  min-width:132px;
+  min-height:54px;
+  padding:13px 22px;
+  font-size:14px;
+}
+
+
+/* Keep desktop header until there is no safe room. */
+@media(max-width:1480px){
+
+  #siteHeader .nav-wrap{
+    gap:20px;
+  }
+
+  #siteHeader .brand{
+    width:205px;
+  }
+
+  #siteHeader .desktop-nav{
+    gap:14px;
+  }
+
+  #siteHeader .desktop-nav a{
+    font-size:12.5px;
+  }
+
+  #siteHeader .header-contact{
+    min-width:118px;
+    padding-inline:17px;
+  }
+
+}
+
+
+/* Switch to existing mobile drawer. */
+@media(max-width:1260px){
+
+  #siteHeader .desktop-nav{
+    display:none;
+  }
+
+  #siteHeader .menu-button{
+    display:flex;
+  }
+
+  #siteHeader .header-actions{
+    margin-left:auto;
+  }
+
+  #siteHeader .brand{
+    width:178px;
+  }
+
+}
+
+
+/* Mobile drawer active state. */
+.mobile-links a.active{
+  color:var(--teal-light);
+}
+
+
+/* Phone header. */
+@media(max-width:640px){
+
+  #siteHeader,
+  #siteHeader.scrolled{
+    padding:7px 0;
+  }
+
+  #siteHeader .container{
+    width:min(100% - 28px, var(--container));
+  }
+
+  #siteHeader .nav-wrap{
+    min-height:58px;
+    gap:12px;
+  }
+
+  #siteHeader .brand{
+    width:138px;
+  }
+
+  #siteHeader .header-contact{
+    display:none;
+  }
+
+  #siteHeader .menu-button{
+    width:44px;
+    height:44px;
+  }
+
+}
+
+/* ============================================================
+   IAIS UAE — SHARED INDEX/HOME FOOTER MATCH V10
+   Used on services.html + all 187 individual service pages.
+   ============================================================ */
+
+.index-site-footer{
+  padding:80px 0 0 !important;
+  color:rgba(255,255,255,.70) !important;
+  background:#00202F !important;
+}
+
+.index-site-footer .footer-top-note{
+  width:fit-content;
+
+  display:flex;
+  align-items:center;
+
+  gap:10px;
+
+  margin:0 auto 56px;
+  padding:10px 20px;
+
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:100px;
+
+  color:rgba(255,255,255,.72);
+
+  background:rgba(255,255,255,.04);
+
+  font-size:13px;
+}
+
+.index-site-footer .footer-top-note svg{
+  width:15px;
+  height:15px;
+
+  flex:0 0 auto;
+
+  color:var(--gold);
+}
+
+.index-site-footer .footer-top-note a{
+  color:var(--teal-light);
+  font-weight:600;
+}
+
+.index-site-footer .footer-grid{
+  display:grid !important;
+
+  grid-template-columns:
+    minmax(220px,1.3fr)
+    minmax(230px,1.45fr)
+    minmax(150px,.85fr)
+    minmax(180px,1fr)
+    minmax(180px,1fr) !important;
+
+  gap:34px !important;
+
+  padding-bottom:56px !important;
+
+  border-bottom:
+    1px solid rgba(255,255,255,.08) !important;
+}
+
+.index-site-footer .footer-brand{
+  display:block !important;
+}
+
+.index-site-footer .footer-brand-logo{
+  display:block;
+
+  width:235px;
+  max-width:100%;
+}
+
+.index-site-footer .footer-brand-logo img{
+  width:100%;
+  height:auto;
+
+  display:block;
+
+  object-fit:contain;
+}
+
+.index-site-footer .footer-brand p{
+  max-width:280px !important;
+
+  margin:18px 0 22px !important;
+
+  color:rgba(255,255,255,.68) !important;
+
+  font-size:13.5px !important;
+  line-height:1.75 !important;
+}
+
+.index-site-footer .footer-social{
+  display:flex;
+
+  gap:10px;
+}
+
+.index-site-footer .footer-social a{
+  width:36px;
+  height:36px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-radius:8px;
+
+  color:#FFFFFF;
+
+  background:rgba(255,255,255,.06);
+
+  transition:
+    background .25s ease,
+    transform .25s ease;
+}
+
+.index-site-footer .footer-social a:hover{
+  background:var(--teal);
+  transform:translateY(-2px);
+}
+
+.index-site-footer .footer-social svg{
+  width:16px;
+  height:16px;
+
+  color:#FFFFFF;
+}
+
+.index-site-footer .footer-col{
+  display:block !important;
+}
+
+.index-site-footer .footer-col h5{
+  margin-bottom:20px;
+
+  color:#FFFFFF;
+
+  font-family:var(--head);
+  font-size:14px;
+  font-weight:600;
+
+  letter-spacing:.02em;
+}
+
+.index-site-footer .footer-col ul{
+  margin:0;
+  padding:0;
+
+  list-style:none;
+}
+
+.index-site-footer .footer-col ul li{
+  margin-bottom:11px;
+}
+
+.index-site-footer .footer-col ul li a{
+  display:inline;
+
+  padding:0 !important;
+
+  color:rgba(255,255,255,.62);
+
+  font-size:13.1px;
+  line-height:1.48;
+
+  transition:color .2s ease;
+}
+
+.index-site-footer .footer-col ul li a:hover{
+  color:var(--teal-light);
+}
+
+.index-site-footer .footer-services-all ul li{
+  margin-bottom:9px;
+}
+
+.index-site-footer .footer-services-all ul li a{
+  font-size:12.4px;
+}
+
+.index-site-footer .footer-all-services-link{
+  margin-top:16px;
+}
+
+.index-site-footer .footer-all-services-link a{
+  color:var(--teal-light) !important;
+
+  font-weight:700;
+}
+
+.index-site-footer .footer-bottom{
+  display:flex !important;
+  align-items:center;
+  justify-content:space-between;
+
+  gap:12px;
+
+  padding:26px 0 !important;
+
+  border-top:0 !important;
+
+  color:rgba(255,255,255,.45) !important;
+
+  font-size:12.5px !important;
+}
+
+.index-site-footer .footer-bottom .legal{
+  display:flex;
+
+  gap:22px;
+}
+
+.index-site-footer .footer-bottom a{
+  color:rgba(255,255,255,.48);
+}
+
+.index-site-footer .footer-bottom a:hover{
+  color:var(--teal-light);
+}
+
+
+/* Match index floating WhatsApp / back-to-top controls. */
+
+.whatsapp-float{
+  position:fixed;
+
+  right:26px;
+  bottom:26px;
+
+  z-index:900;
+
+  width:60px;
+  height:60px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-radius:50%;
+
+  color:#FFFFFF;
+  background:#25D366;
+
+  box-shadow:
+    0 10px 26px rgba(37,211,102,.45);
+}
+
+.whatsapp-float svg{
+  width:28px;
+  height:28px;
+
+  fill:#FFFFFF;
+}
+
+.to-top{
+  position:fixed;
+
+  left:26px;
+  bottom:26px;
+
+  z-index:900;
+
+  width:46px;
+  height:46px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border:0;
+  border-radius:50%;
+
+  color:#FFFFFF;
+  background:var(--navy);
+
+  box-shadow:var(--shadow-md);
+
+  opacity:0;
+  visibility:hidden;
+
+  cursor:pointer;
+
+  transition:
+    opacity .3s ease,
+    visibility .3s ease,
+    transform .3s ease;
+}
+
+.to-top.show{
+  opacity:1;
+  visibility:visible;
+}
+
+.to-top:hover{
+  transform:translateY(-2px);
+}
+
+.to-top svg{
+  width:18px;
+  height:18px;
+
+  color:#FFFFFF;
+}
+
+
+/* ============================================================
+   INDEX FOOTER RESPONSIVE
+   ============================================================ */
+
+@media(max-width:1250px){
+
+  .index-site-footer .footer-grid{
+    grid-template-columns:
+      1.2fr 1.3fr 1fr !important;
+  }
+
+}
+
+
+@media(max-width:850px){
+
+  .index-site-footer{
+    padding-top:60px !important;
+  }
+
+  .index-site-footer .footer-top-note{
+    margin-bottom:40px;
+
+    text-align:center;
+  }
+
+  .index-site-footer .footer-grid{
+    grid-template-columns:
+      1fr 1fr !important;
+
+    gap:34px 28px !important;
+  }
+
+  .index-site-footer .footer-brand-logo{
+    width:205px;
+  }
+
+}
+
+
+@media(max-width:560px){
+
+  .index-site-footer{
+    padding-top:46px !important;
+  }
+
+  .index-site-footer .container{
+    width:min(100% - 28px,var(--container));
+  }
+
+  .index-site-footer .footer-top-note{
+    width:100%;
+
+    justify-content:center;
+
+    margin-bottom:34px;
+    padding:10px 14px;
+
+    border-radius:12px;
+
+    font-size:11.5px;
+    line-height:1.5;
+  }
+
+  .index-site-footer .footer-grid{
+    grid-template-columns:1fr !important;
+
+    gap:32px !important;
+
+    padding-bottom:38px !important;
+  }
+
+  .index-site-footer .footer-brand-logo{
+    width:185px;
+  }
+
+  .index-site-footer .footer-brand p{
+    max-width:100% !important;
+  }
+
+  .index-site-footer .footer-bottom{
+    align-items:flex-start !important;
+    flex-direction:column;
+
+    gap:14px;
+  }
+
+  .index-site-footer .footer-bottom .legal{
+    flex-wrap:wrap;
+
+    gap:12px 18px;
+  }
+
+  .whatsapp-float{
+    right:14px;
+    bottom:14px;
+
+    width:54px;
+    height:54px;
+  }
+
+  .to-top{
+    left:14px;
+    bottom:14px;
+
+    width:44px;
+    height:44px;
+  }
+
+}
+
 .services-hero.industries-hero{
   position:relative;
   overflow:hidden;

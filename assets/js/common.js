@@ -169,16 +169,42 @@ function renderFooter(){
             <a href="mailto:i@iaisuae.com" aria-label="Email">${ic('mail')}</a>
           </div>
         </div>
-        <div class="footer-col">
-          <h5>Services</h5>
-          <ul>
-            <li><a href="services.html">NDT Inspection</a></li>
-            <li><a href="services.html">Rope Access</a></li>
-            <li><a href="services.html">Drone Inspection</a></li>
-            <li><a href="services.html">Asset Integrity</a></li>
-            <li><a href="services.html">Metallurgical Services</a></li>
-          </ul>
-        </div>
+        <div class="footer-col footer-services-all">
+        <h5>Services</h5>
+
+        <ul>
+          <li>
+            <a href="services.html#category-01">
+              Asset Integrity Management &amp; Engineering
+            </a>
+          </li>
+
+          <li>
+            <a href="services.html#category-02">
+              NDT &amp; Advanced Inspection Services
+            </a>
+          </li>
+
+          <li>
+            <a href="services.html#category-03">
+              Tube, Heat Exchanger &amp; Boiler Inspection
+            </a>
+          </li>
+
+          <li>
+            <a href="services.html#category-04">
+              Storage Tank Integrity
+            </a>
+          </li>
+
+          <li class="footer-all-services-link">
+            <a href="services.html">
+              View Services &rarr;
+            </a>
+          </li>
+        </ul>
+      </div>
+
         <div class="footer-col">
           <h5>Company</h5>
           <ul>
