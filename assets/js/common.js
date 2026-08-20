@@ -31,17 +31,36 @@ function renderHeader(){
   <header id="siteHeader">
     <div class="container nav-wrap">
 
-      <a
-        href="index.html"
-        class="logo company-logo"
-        aria-label="IAIS UAE Home"
-      >
-        <img
-          src="https://iaisindia.com/wp-content/uploads/2026/08/IAIS_UAE_Final_Logo-scaled.png"
-          alt="IAIS UAE"
-          class="header-logo-img"
-        >
-      </a>
+   <a
+  href="index.html"
+  class="logo company-logo"
+  aria-label="IAIS UAE Home"
+  style="
+    width:300px !important;
+    min-width:300px !important;
+    max-width:300px !important;
+    height:auto !important;
+    flex:0 0 300px !important;
+    display:flex !important;
+    align-items:center !important;
+  "
+>
+  <img
+    src="https://iaisindia.com/wp-content/uploads/2026/08/IAIS_UAE_Final_Logo-scaled.png"
+    alt="IAIS UAE"
+    class="header-logo-img"
+    style="
+      width:250px !important;
+      min-width:250px !important;
+      max-width:250px !important;
+      height:auto !important;
+      max-height:none !important;
+      display:block !important;
+      object-fit:contain !important;
+    "
+  >
+</a>
+</a>
 
       <nav
         class="nav-links"

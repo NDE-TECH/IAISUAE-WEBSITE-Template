@@ -1539,3 +1539,7 @@ header.scrolled .brand-logo-img{
   }
 
 }
+.header-logo-img{
+  width: 220px;
+  height: 220px;
+}
