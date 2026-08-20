@@ -1543,3 +1543,52 @@ header.scrolled .brand-logo-img{
   width: 220px;
   height: 220px;
 }
+/* ============================================================
+   HOME ARTICLE — READ ARTICLE BUTTON
+   ============================================================ */
+
+.home-article-body .learn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:7px;
+
+  width:max-content;
+  max-width:100%;
+
+  margin-top:18px;
+  padding:11px 18px;
+
+  border-radius:7px;
+
+  background:var(--teal);
+  color:#ffffff !important;
+
+  font-size:13px;
+  font-weight:700;
+  line-height:1;
+
+  white-space:nowrap;
+
+  box-shadow:0 6px 16px rgba(0,163,163,.20);
+
+  transition:
+    background .25s ease,
+    transform .25s ease,
+    box-shadow .25s ease;
+}
+
+.home-article-body .learn:hover{
+  background:var(--navy);
+
+  transform:translateY(-2px);
+
+  box-shadow:0 9px 20px rgba(0,59,92,.24);
+}
+
+.home-article-body .learn svg{
+  width:14px;
+  height:14px;
+
+  stroke:currentColor;
+}
