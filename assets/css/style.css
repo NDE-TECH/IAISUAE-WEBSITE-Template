@@ -1592,3 +1592,112 @@ header.scrolled .brand-logo-img{
 
   stroke:currentColor;
 }
+
+/* SMALL SERVICE SUBCATEGORY COUNT */
+
+.home-card-meta b,
+.home-card-topline b{
+  min-width:28px !important;
+  width:28px;
+  height:28px;
+
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  padding:0 !important;
+
+  border-radius:50%;
+
+  font-size:9.5px !important;
+  font-weight:700;
+
+  background:rgba(244,180,0,.13);
+  color:var(--navy);
+}
+
+/* ============================================================
+   SCAN IMAGE AUTOMATIC SLIDER
+   ============================================================ */
+
+.scan-frame .scan-slider{
+  position:absolute;
+  inset:0;
+
+  overflow:hidden;
+}
+
+
+/* BOTH IMAGES */
+
+.scan-frame .scan-slide{
+  position:absolute;
+  inset:0;
+
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+  opacity:0;
+
+  transform:translateY(100%);
+
+  transition:
+    transform 1s ease,
+    opacity 1s ease;
+}
+
+
+/* CURRENT IMAGE */
+
+.scan-frame .scan-slide.active{
+  opacity:1;
+
+  transform:translateY(0);
+}
+
+
+/* CURRENT IMAGE MOVES UP */
+
+.scan-frame .scan-slide.exit-up{
+  opacity:0;
+
+  transform:translateY(-100%);
+}
+
+.clients-track{
+  animation: marquee 300s linear infinite !important;
+}
+
+
+/* ============================================================
+   HOME SERVICES — SMALL TOP RIGHT ICON
+   replaces 15 / 17 / 13 / 16 numbers
+   ============================================================ */
+
+.home-category-symbol{
+  width:28px;
+  height:28px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  flex:0 0 28px;
+
+  border-radius:50%;
+
+  background:#fff4d8;
+  color:#008f98;
+}
+
+.home-category-symbol svg{
+  width:14px;
+  height:14px;
+
+  stroke:currentColor;
+  fill:none;
+
+  stroke-width:1.8;
+}

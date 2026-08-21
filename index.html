@@ -219,16 +219,48 @@
 <section class="home-hero" id="home">
  <div class="hero-grid-lines"></div>
 <div class="hero-grid-lines"></div>
-  <div class="scan-frame">
-    <div class="img-wrap">
-      <img class="bg-img" src="https://iaisindia.com/wp-content/uploads/2026/08/scan.png" alt="NDT scan target" />
-    </div>
-    <div class="corner c1"></div><div class="corner c2"></div>
-    <div class="corner c3"></div><div class="corner c4"></div>
-    <div class="line"></div>
-    <div class="readout">  SCANNING CRITICAL  // ASSETS<span>Detecting what cannot be seen.
-Protecting what cannot be compromised</span></div>
+ <div class="scan-frame">
+
+  <div class="img-wrap scan-slider">
+
+    <!-- IMAGE 01 -->
+    <img
+      class="bg-img scan-slide active"
+      src="https://iaisindia.com/wp-content/uploads/2026/08/scan.png"
+      alt="NDT scan target"
+    >
+
+    <!-- IMAGE 02 -->
+    <img
+      class="bg-img scan-slide"
+      src="https://iaisindia.com/wp-content/uploads/2026/08/SCAN-IMAGE.png"
+      alt="Industrial asset digital scan"
+    >
+
   </div>
+
+
+  <div class="corner c1"></div>
+  <div class="corner c2"></div>
+  <div class="corner c3"></div>
+  <div class="corner c4"></div>
+
+
+  <div class="line"></div>
+
+
+  <div class="readout">
+
+    SCANNING CRITICAL // ASSETS
+
+    <span>
+      Detecting what cannot be seen.<br>
+      Protecting what cannot be compromised
+    </span>
+
+  </div>
+
+</div>
   <div class="container">
     <div class="hero-content">
       <div class="hero-badge"><span class="dot"></span> INDUSTRIAL SOLUTIONS &nbsp;|&nbsp; UAE &amp; GCC &nbsp;|&nbsp; PART OF IAIS GROUP</div>
@@ -385,8 +417,8 @@ Protecting what cannot be compromised</span></div>
 <section id="testimonials">
   <div class="container">
     <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
-      <div class="eyebrow">Client Voices</div>
-      <h2>Testimonials</h2>
+      <div class="eyebrow">OUR CLIENT COMMITMENT</div>
+      <h2>Built Around Your Operational Priorities</h2>
     </div>
     <div class="testi-wrap reveal" id="testiWrap">
       <div class="testi-quote-mark">&ldquo;</div>
@@ -416,9 +448,12 @@ Protecting what cannot be compromised</span></div>
 document.getElementById('servicesGrid').innerHTML = HOME_SERVICE_CATEGORIES.map(s => `
   <div class="s-card home-service-card">
     <div class="home-card-meta">
-      <span>CATEGORY ${s.no}</span>
-      <b>${s.count}</b>
-    </div>
+  <span>CATEGORY ${s.no}</span>
+
+  <div class="home-category-symbol">
+    ${ic(s.icon)}
+  </div>
+</div>
     <div class="s-icon">${ic(s.icon)}</div>
     <h3>${s.title}</h3>
     <p>${s.short}</p>
@@ -523,5 +558,48 @@ setInterval(() => showTesti((testiIdx+1) % TESTIMONIALS.length), 5500);
   ]
 }
 </script>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+
+  const scanSlides =
+    document.querySelectorAll('.scan-slide');
+
+  if(scanSlides.length < 2) return;
+
+  let currentScan = 0;
+
+  setInterval(function(){
+
+    const current =
+      scanSlides[currentScan];
+
+    const nextIndex =
+      (currentScan + 1) % scanSlides.length;
+
+    const next =
+      scanSlides[nextIndex];
+
+    current.classList.add('exit-up');
+    current.classList.remove('active');
+
+    next.classList.add('active');
+
+    setTimeout(function(){
+      current.classList.remove('exit-up');
+    }, 950);
+
+    currentScan = nextIndex;
+
+  }, 5000);
+
+});
+</script>
+<div class="home-card-meta">
+  <span>CATEGORY ${s.no}</span>
+
+  <div class="home-category-symbol">
+    ${ic(s.icon)}
+  </div>
+</div>
 </body>
 </html>
