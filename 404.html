@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#00263B">
+  <title>404 — Page Not Found | IAIS UAE</title>
+  <meta name="description" content="The page you requested could not be found. Return to the IAIS UAE homepage to explore industrial inspection and asset integrity solutions.">
+  <style>
+    :root { color-scheme: dark; --navy: #00263B; --blue: #003B5C; --teal: #00A3A3; --gold: #F4B400; }
+    * { box-sizing: border-box; }
+    html { height: 100%; }
+    body {
+      min-height: 100vh;
+      min-height: 100dvh;
+      margin: 0;
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      color: #fff;
+      background: radial-gradient(ellipse at 80% 25%, rgba(0,163,163,.17), transparent 38%),
+                  linear-gradient(135deg, #001e2e 0%, #003B5C 100%);
+      display: flex;
+      flex-direction: column;
+    }
+    header, footer { width: min(1140px, calc(100% - 40px)); margin-inline: auto; }
+    header { display: flex; align-items: center; justify-content: space-between; padding-block: 30px; gap: 20px; }
+    .brand { color: #fff; text-decoration: none; display: inline-flex; flex-direction: column; gap: 5px; }
+    .brand strong { font-size: 28px; font-weight: 850; line-height: 1; letter-spacing: -.065em; }
+    .brand strong span { font-weight: 650; color: #bed4df; letter-spacing: -.04em; }
+    .brand small { color: #a9c6d1; font-size: 10px; letter-spacing: .07em; text-transform: uppercase; }
+    .header-home { color: #d3e4ec; font-size: 14px; font-weight: 600; text-decoration: none; }
+    .header-home:hover, .header-home:focus-visible { color: #fff; }
+    main { flex: 1; width: min(1140px, calc(100% - 40px)); margin: auto; display: flex; align-items: center; padding: 52px 0 90px; }
+    .content { max-width: 750px; }
+    .eyebrow { display: flex; align-items: center; gap: 12px; margin: 0 0 20px; color: #a9e6e7; font-size: 12px; letter-spacing: .15em; font-weight: 700; text-transform: uppercase; }
+    .eyebrow::before { content: ""; display: block; width: 34px; height: 3px; border-radius: 20px; background: var(--gold); }
+    .number { margin: 0 0 8px; font-size: clamp(100px, 18vw, 220px); font-weight: 850; line-height: .9; letter-spacing: -.075em; color: #fff; text-shadow: 0 12px 45px rgba(0,0,0,.15); }
+    h1 { margin: 22px 0 15px; font-size: clamp(30px, 4.2vw, 52px); line-height: 1.13; letter-spacing: -.04em; }
+    .description { max-width: 600px; margin: 0; color: #c4d9e3; font-size: clamp(16px, 1.7vw, 19px); line-height: 1.75; }
+    .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 32px; }
+    .button { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; border-radius: 9px; padding: 14px 25px; font-size: 14px; font-weight: 700; text-decoration: none; transition: background .2s, transform .2s; }
+    .button:hover { transform: translateY(-2px); }
+    .primary { background: var(--teal); color: #fff; }
+    .primary:hover { background: #008d92; }
+    .outline { border: 1px solid rgba(255,255,255,.55); color: #fff; }
+    .outline:hover { background: rgba(255,255,255,.1); }
+    footer { padding-block: 25px; border-top: 1px solid rgba(255,255,255,.13); color: #9db9c6; font-size: 12px; }
+    @media (max-width: 520px) {
+      header { padding-block: 22px; }
+      .brand strong { font-size: 24px; }
+      .brand small { font-size: 9px; }
+      main { padding: 42px 0 68px; }
+      .actions { align-items: stretch; flex-direction: column; }
+      .button { width: 100%; }
+    }
+    @media (prefers-reduced-motion: reduce) { .button { transition: none; } }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="/" aria-label="IAIS UAE homepage">
+      <strong>IAIS<span> UAE</span></strong>
+      <small>Integrity &amp; Advanced Inspection Solutions</small>
+    </a>
+    <a class="header-home" href="/">Home</a>
+  </header>
+
+  <main id="main-content">
+    <div class="content">
+      <p class="eyebrow">IAIS UAE · Website navigation</p>
+      <p class="number" aria-label="Error 404">404</p>
+      <h1>Sorry, page not found.</h1>
+      <p class="description">This page is not available or may have been moved. Please visit our home page to continue exploring IAIS UAE industrial inspection and asset integrity solutions.</p>
+      <nav class="actions" aria-label="Helpful links">
+        <a class="button primary" href="/">Visit Home Page</a>
+        <a class="button outline" href="/services.html">Explore Our Services</a>
+      </nav>
+    </div>
+  </main>
+
+  <footer>&copy; IAIS UAE. All rights reserved.</footer>
+</body>
+</html>
