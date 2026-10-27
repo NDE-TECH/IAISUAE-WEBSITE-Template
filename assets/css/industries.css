@@ -254,15 +254,10 @@ button{color:inherit}
    HERO
    ============================================================ */
 
-.services-hero{
-  position:relative;
-  min-height:720px;
-  display:flex;
-  align-items:flex-end;
-  padding:185px 0 78px;
-  overflow:hidden;
-  color:#fff;
-  background:url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1800&auto=format&fit=crop') center/cover no-repeat;
+.services-hero.industries-hero {
+    background-image: url('../Images/banner.png') !important;
+    background-position: center center !important;
+    background-size: cover !important;
 }
 .hero-overlay{
   position:absolute;
@@ -2957,25 +2952,17 @@ button{color:inherit}
    ============================================================ */
 
 /* Keep the photograph visible and less dull */
-.services-hero.industries-hero{
-  background-image:
-    url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=88&w=1900&auto=format&fit=crop') !important;
-  background-position:center center !important;
-  background-size:cover !important;
-  color:#FFFFFF !important;
+.services-hero.industries-hero {
+    background-image: url('../Images/banner.png') !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    color: #FFFFFF !important;
 }
 
-/* Cleaner blue overlay:
-   strong enough behind text, much lighter over the photo */
-.services-hero.industries-hero .hero-overlay{
-  background:
-    linear-gradient(
-      90deg,
-      rgba(0,38,59,.88) 0%,
-      rgba(0,48,75,.76) 38%,
-      rgba(0,63,88,.48) 68%,
-      rgba(0,38,59,.18) 100%
-    ) !important;
+.services-hero.industries-hero {
+    background-image: url('../Images/banner.png') !important;
+    background-position: center center !important;
+    background-size: cover !important;
 }
 
 /* Grid should be subtle, not muddy */

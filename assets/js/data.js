@@ -46,7 +46,7 @@ function ic(name, cls=''){ return `<svg viewBox="0 0 24 24" fill="none" stroke-l
 const SERVICES = [
   {icon:'wave', title:'NDT Inspection', short:'Ultrasonic, radiographic, magnetic particle and dye penetrant testing to detect flaws before they become failures.',
    desc:'Our Non-Destructive Testing division applies internationally recognised methods to identify surface and sub-surface flaws in welds, castings and forgings without compromising the component. Every technician is certified to ASNT SNT-TC-1A / PCN Level II & III, and every result is issued as a fully traceable, code-referenced report.',
-   img:'https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=900&auto=format&fit=crop',
+   img:'assets/Images/banner.png',
    tags:['UT','RT','MT','PT','VT','Phased Array UT'],
    points:['Weld and material integrity verification to ASME / API / ISO codes','Portable digital radiography for fast, safe turnaround','Phased array &amp; TOFD for complex weld geometries','Fully traceable digital reporting with photographic evidence']},
   {icon:'rope', title:'Rope Access', short:'IRATA-certified technicians reaching difficult structures without scaffolding, minimising downtime and cost.',
@@ -569,7 +569,7 @@ const HOME_FEATURED_PROJECTS = [
     title:'Refinery Health Assessment by PAUT & TOFD',
     client:'IOCL Mathura Refinery',
     desc:'Health assessment of refinery equipment and piping using PAUT and TOFD during maintenance and inspection shutdown work.',
-    img:'https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=900&auto=format&fit=crop',
+    img:'assets/Images/banner.png',
     href:'projects/refinery-health-assessment-by-paut-and-tofd/'
   },
   {

@@ -55,7 +55,7 @@ const IAIS_SERVICES = [
     "title": "Conventional Non-Destructive Testing",
     "short": "Conventional non-destructive testing for welds, materials and in-service assets using suitable surface and volumetric inspection methods.",
     "desc": "Conventional non-destructive testing for welds, materials and in-service assets using suitable surface and volumetric inspection methods. IAIS UAE can integrate this service into fabrication inspection, plant maintenance, shutdown, integrity and project-quality scopes. The final inspection method, coverage, equipment and reporting format are confirmed against the actual asset and client requirement. For UAE and GCC projects, this service can also be coordinated with complementary NDT, access, thermal-treatment, materials or engineering support where a multi-discipline scope is required.",
-    "img": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1600&auto=format&fit=crop",
+    "img": "assets/Images/modern-industrial-inspection-lab.png",
     "tags": [
       "NDT",
       "INSPECTION"
@@ -87,7 +87,7 @@ const IAIS_SERVICES = [
     "title": "Eddy Current Testing",
     "short": "Electromagnetic inspection for detecting surface and near-surface discontinuities and assessing conductive components without damaging the item.",
     "desc": "Electromagnetic inspection for detecting surface and near-surface discontinuities and assessing conductive components without damaging the item. IAIS UAE can integrate this service into fabrication inspection, plant maintenance, shutdown, integrity and project-quality scopes. The final inspection method, coverage, equipment and reporting format are confirmed against the actual asset and client requirement. For UAE and GCC projects, this service can also be coordinated with complementary NDT, access, thermal-treatment, materials or engineering support where a multi-discipline scope is required.",
-    "img": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1600&auto=format&fit=crop",
+    "img": "assets/Images/modern-industrial-inspection-lab.png",
     "tags": [
       "ECT"
     ],
@@ -211,7 +211,7 @@ const IAIS_SERVICES = [
     "title": "Holiday Inspection",
     "short": "Coating holiday inspection for locating pinholes, voids and discontinuities that can reduce the protection provided by an applied coating.",
     "desc": "Coating holiday inspection for locating pinholes, voids and discontinuities that can reduce the protection provided by an applied coating. IAIS UAE can integrate this service into fabrication inspection, plant maintenance, shutdown, integrity and project-quality scopes. The final inspection method, coverage, equipment and reporting format are confirmed against the actual asset and client requirement. For UAE and GCC projects, this service can also be coordinated with complementary NDT, access, thermal-treatment, materials or engineering support where a multi-discipline scope is required.",
-    "img": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1600&auto=format&fit=crop",
+    "img": "assets/Images/modern-industrial-inspection-lab.png",
     "tags": [
       "NDT",
       "INSPECTION"
@@ -243,7 +243,7 @@ const IAIS_SERVICES = [
     "title": "Leak Testing (LT)",
     "short": "Leak-testing support for verifying containment integrity of joints, systems, vessels and fabricated assemblies using a method suited to the required sensitivity.",
     "desc": "Leak-testing support for verifying containment integrity of joints, systems, vessels and fabricated assemblies using a method suited to the required sensitivity. IAIS UAE can integrate this service into fabrication inspection, plant maintenance, shutdown, integrity and project-quality scopes. The final inspection method, coverage, equipment and reporting format are confirmed against the actual asset and client requirement. For UAE and GCC projects, this service can also be coordinated with complementary NDT, access, thermal-treatment, materials or engineering support where a multi-discipline scope is required.",
-    "img": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1600&auto=format&fit=crop",
+    "img": "assets/Images/modern-industrial-inspection-lab.png",
     "tags": [
       "NDT",
       "INSPECTION"
@@ -275,7 +275,7 @@ const IAIS_SERVICES = [
     "title": "Liquid Penetrant Testing",
     "short": "Surface examination for revealing fine surface-breaking discontinuities in suitable non-porous metallic and non-metallic materials.",
     "desc": "Surface examination for revealing fine surface-breaking discontinuities in suitable non-porous metallic and non-metallic materials. IAIS UAE can integrate this service into fabrication inspection, plant maintenance, shutdown, integrity and project-quality scopes. The final inspection method, coverage, equipment and reporting format are confirmed against the actual asset and client requirement. For UAE and GCC projects, this service can also be coordinated with complementary NDT, access, thermal-treatment, materials or engineering support where a multi-discipline scope is required.",
-    "img": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1600&auto=format&fit=crop",
+    "img": "assets/Images/modern-industrial-inspection-lab.png",
     "tags": [
       "PT"
     ],
@@ -306,7 +306,7 @@ const IAIS_SERVICES = [
     "title": "Magnetic Particle Testing",
     "short": "Surface and near-surface crack detection for ferromagnetic welds, forgings, castings and structural components.",
     "desc": "Surface and near-surface crack detection for ferromagnetic welds, forgings, castings and structural components. IAIS UAE can integrate this service into fabrication inspection, plant maintenance, shutdown, integrity and project-quality scopes. The final inspection method, coverage, equipment and reporting format are confirmed against the actual asset and client requirement. For UAE and GCC projects, this service can also be coordinated with complementary NDT, access, thermal-treatment, materials or engineering support where a multi-discipline scope is required.",
-    "img": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1600&auto=format&fit=crop",
+    "img": "assets/Images/modern-industrial-inspection-lab.png",
     "tags": [
       "MT"
     ],
@@ -368,7 +368,7 @@ const IAIS_SERVICES = [
     "title": "Radiography Testing",
     "short": "Volumetric radiographic examination of welds and components where internal discontinuities must be evaluated through image-based inspection.",
     "desc": "Volumetric radiographic examination of welds and components where internal discontinuities must be evaluated through image-based inspection. IAIS UAE can integrate this service into fabrication inspection, plant maintenance, shutdown, integrity and project-quality scopes. The final inspection method, coverage, equipment and reporting format are confirmed against the actual asset and client requirement. For UAE and GCC projects, this service can also be coordinated with complementary NDT, access, thermal-treatment, materials or engineering support where a multi-discipline scope is required.",
-    "img": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1600&auto=format&fit=crop",
+    "img": "assets/Images/modern-industrial-inspection-lab.png",
     "tags": [
       "RT"
     ],
@@ -399,7 +399,7 @@ const IAIS_SERVICES = [
     "title": "Ultrasonic Thickness Gauging",
     "short": "Ultrasonic thickness measurement for monitoring remaining wall thickness, corrosion and erosion without cutting or damaging the inspected component.",
     "desc": "Ultrasonic thickness measurement for monitoring remaining wall thickness, corrosion and erosion without cutting or damaging the inspected component. IAIS UAE can integrate this service into fabrication inspection, plant maintenance, shutdown, integrity and project-quality scopes. The final inspection method, coverage, equipment and reporting format are confirmed against the actual asset and client requirement. For UAE and GCC projects, this service can also be coordinated with complementary NDT, access, thermal-treatment, materials or engineering support where a multi-discipline scope is required.",
-    "img": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1600&auto=format&fit=crop",
+    "img": "assets/Images/modern-industrial-inspection-lab.png",
     "tags": [
       "UT"
     ],
@@ -430,7 +430,7 @@ const IAIS_SERVICES = [
     "title": "Ultrasonic Weld Scan",
     "short": "Ultrasonic weld examination for locating and evaluating internal reflectors in welded joints using suitable straight-beam and angle-beam techniques.",
     "desc": "Ultrasonic weld examination for locating and evaluating internal reflectors in welded joints using suitable straight-beam and angle-beam techniques. IAIS UAE can integrate this service into fabrication inspection, plant maintenance, shutdown, integrity and project-quality scopes. The final inspection method, coverage, equipment and reporting format are confirmed against the actual asset and client requirement. For UAE and GCC projects, this service can also be coordinated with complementary NDT, access, thermal-treatment, materials or engineering support where a multi-discipline scope is required.",
-    "img": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1600&auto=format&fit=crop",
+    "img": "assets/Images/modern-industrial-inspection-lab.png",
     "tags": [
       "UT"
     ],
@@ -461,7 +461,7 @@ const IAIS_SERVICES = [
     "title": "Vacuum Box Testing",
     "short": "Localized leak detection for selected weld seams and plate joints using a controlled vacuum box and indicating solution.",
     "desc": "Localized leak detection for selected weld seams and plate joints using a controlled vacuum box and indicating solution. IAIS UAE can integrate this service into fabrication inspection, plant maintenance, shutdown, integrity and project-quality scopes. The final inspection method, coverage, equipment and reporting format are confirmed against the actual asset and client requirement. For UAE and GCC projects, this service can also be coordinated with complementary NDT, access, thermal-treatment, materials or engineering support where a multi-discipline scope is required.",
-    "img": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1600&auto=format&fit=crop",
+    "img": "assets/Images/modern-industrial-inspection-lab.png",
     "tags": [
       "NDT",
       "INSPECTION"
@@ -493,7 +493,7 @@ const IAIS_SERVICES = [
     "title": "Visual Testing (VT)",
     "short": "Direct or remote visual examination for identifying visible weld conditions, corrosion, deformation, damage and surface anomalies.",
     "desc": "Direct or remote visual examination for identifying visible weld conditions, corrosion, deformation, damage and surface anomalies. IAIS UAE can integrate this service into fabrication inspection, plant maintenance, shutdown, integrity and project-quality scopes. The final inspection method, coverage, equipment and reporting format are confirmed against the actual asset and client requirement. For UAE and GCC projects, this service can also be coordinated with complementary NDT, access, thermal-treatment, materials or engineering support where a multi-discipline scope is required.",
-    "img": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1600&auto=format&fit=crop",
+    "img": "assets/Images/modern-industrial-inspection-lab.png",
     "tags": [
       "VT"
     ],
@@ -1128,7 +1128,7 @@ const IAIS_SERVICES = [
     "title": "Advanced NDT",
     "short": "Advanced NDT for complex welds and critical assets using encoded and higher-resolution inspection methods where conventional coverage needs to be extended.",
     "desc": "Advanced NDT for complex welds and critical assets using encoded and higher-resolution inspection methods where conventional coverage needs to be extended. IAIS UAE can integrate this service into fabrication inspection, plant maintenance, shutdown, integrity and project-quality scopes. The final inspection method, coverage, equipment and reporting format are confirmed against the actual asset and client requirement. For UAE and GCC projects, this service can also be coordinated with complementary NDT, access, thermal-treatment, materials or engineering support where a multi-discipline scope is required.",
-    "img": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1600&auto=format&fit=crop",
+    "img": "assets/Images/modern-industrial-inspection-lab.png",
     "tags": [
       "INSPECTION",
       "IAIS UAE"
@@ -1192,7 +1192,7 @@ const IAIS_SERVICES = [
     "title": "API Inspection",
     "short": "API Inspection support for industrial projects in the UAE and GCC, delivered as a defined field or engineering scope with traceable inspection documentation.",
     "desc": "API Inspection support for industrial projects in the UAE and GCC, delivered as a defined field or engineering scope with traceable inspection documentation. IAIS UAE can integrate this service into fabrication inspection, plant maintenance, shutdown, integrity and project-quality scopes. The final inspection method, coverage, equipment and reporting format are confirmed against the actual asset and client requirement. For UAE and GCC projects, this service can also be coordinated with complementary NDT, access, thermal-treatment, materials or engineering support where a multi-discipline scope is required.",
-    "img": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1600&auto=format&fit=crop",
+    "img": "assets/Images/modern-industrial-inspection-lab.png",
     "tags": [
       "API"
     ],
@@ -1318,7 +1318,7 @@ const IAIS_SERVICES = [
     "title": "Condition Monitoring",
     "short": "Condition-monitoring support for tracking equipment health, degradation trends and maintenance priorities using repeatable inspection and measurement data.",
     "desc": "Condition-monitoring support for tracking equipment health, degradation trends and maintenance priorities using repeatable inspection and measurement data. IAIS UAE can integrate this service into fabrication inspection, plant maintenance, shutdown, integrity and project-quality scopes. The final inspection method, coverage, equipment and reporting format are confirmed against the actual asset and client requirement. For UAE and GCC projects, this service can also be coordinated with complementary NDT, access, thermal-treatment, materials or engineering support where a multi-discipline scope is required.",
-    "img": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1600&auto=format&fit=crop",
+    "img": "assets/Images/modern-industrial-inspection-lab.png",
     "tags": [
       "INSPECTION",
       "IAIS UAE"
@@ -1350,7 +1350,7 @@ const IAIS_SERVICES = [
     "title": "Conventional NDT",
     "short": "Conventional non-destructive testing for welds, materials and in-service assets using suitable surface and volumetric inspection methods.",
     "desc": "Conventional non-destructive testing for welds, materials and in-service assets using suitable surface and volumetric inspection methods. IAIS UAE can integrate this service into fabrication inspection, plant maintenance, shutdown, integrity and project-quality scopes. The final inspection method, coverage, equipment and reporting format are confirmed against the actual asset and client requirement. For UAE and GCC projects, this service can also be coordinated with complementary NDT, access, thermal-treatment, materials or engineering support where a multi-discipline scope is required.",
-    "img": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1600&auto=format&fit=crop",
+    "img": "assets/Images/modern-industrial-inspection-lab.png",
     "tags": [
       "INSPECTION",
       "IAIS UAE"
@@ -1413,7 +1413,7 @@ const IAIS_SERVICES = [
     "title": "In-Services Inspections",
     "short": "In-Services Inspections support for industrial projects in the UAE and GCC, delivered as a defined field or engineering scope with traceable inspection documentation.",
     "desc": "In-Services Inspections support for industrial projects in the UAE and GCC, delivered as a defined field or engineering scope with traceable inspection documentation. IAIS UAE can integrate this service into fabrication inspection, plant maintenance, shutdown, integrity and project-quality scopes. The final inspection method, coverage, equipment and reporting format are confirmed against the actual asset and client requirement. For UAE and GCC projects, this service can also be coordinated with complementary NDT, access, thermal-treatment, materials or engineering support where a multi-discipline scope is required.",
-    "img": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1600&auto=format&fit=crop",
+    "img": "assets/Images/modern-industrial-inspection-lab.png",
     "tags": [
       "INSPECTION",
       "IAIS UAE"
@@ -1476,7 +1476,7 @@ const IAIS_SERVICES = [
     "title": "ISO NDT SERVICES",
     "short": "Conventional non-destructive testing for welds, materials and in-service assets using suitable surface and volumetric inspection methods.",
     "desc": "Conventional non-destructive testing for welds, materials and in-service assets using suitable surface and volumetric inspection methods. IAIS UAE can integrate this service into fabrication inspection, plant maintenance, shutdown, integrity and project-quality scopes. The final inspection method, coverage, equipment and reporting format are confirmed against the actual asset and client requirement. For UAE and GCC projects, this service can also be coordinated with complementary NDT, access, thermal-treatment, materials or engineering support where a multi-discipline scope is required.",
-    "img": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1600&auto=format&fit=crop",
+    "img": "assets/Images/modern-industrial-inspection-lab.png",
     "tags": [
       "INSPECTION",
       "IAIS UAE"
@@ -1508,7 +1508,7 @@ const IAIS_SERVICES = [
     "title": "Lifting Gear Inspection",
     "short": "Lifting Gear Inspection support for industrial projects in the UAE and GCC, delivered as a defined field or engineering scope with traceable inspection documentation.",
     "desc": "Lifting Gear Inspection support for industrial projects in the UAE and GCC, delivered as a defined field or engineering scope with traceable inspection documentation. IAIS UAE can integrate this service into fabrication inspection, plant maintenance, shutdown, integrity and project-quality scopes. The final inspection method, coverage, equipment and reporting format are confirmed against the actual asset and client requirement. For UAE and GCC projects, this service can also be coordinated with complementary NDT, access, thermal-treatment, materials or engineering support where a multi-discipline scope is required.",
-    "img": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1600&auto=format&fit=crop",
+    "img": "assets/Images/modern-industrial-inspection-lab.png",
     "tags": [
       "INSPECTION",
       "IAIS UAE"
@@ -1572,7 +1572,7 @@ const IAIS_SERVICES = [
     "title": "Metalurgical Services",
     "short": "Metalurgical Services support for industrial projects in the UAE and GCC, delivered as a defined field or engineering scope with traceable inspection documentation.",
     "desc": "Metalurgical Services support for industrial projects in the UAE and GCC, delivered as a defined field or engineering scope with traceable inspection documentation. IAIS UAE can integrate this service into fabrication inspection, plant maintenance, shutdown, integrity and project-quality scopes. The final inspection method, coverage, equipment and reporting format are confirmed against the actual asset and client requirement. For UAE and GCC projects, this service can also be coordinated with complementary NDT, access, thermal-treatment, materials or engineering support where a multi-discipline scope is required.",
-    "img": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1600&auto=format&fit=crop",
+    "img": "assets/Images/modern-industrial-inspection-lab.png",
     "tags": [
       "INSPECTION",
       "IAIS UAE"
@@ -1604,7 +1604,7 @@ const IAIS_SERVICES = [
     "title": "NDT Equipment Rental-Overseas",
     "short": "Conventional non-destructive testing for welds, materials and in-service assets using suitable surface and volumetric inspection methods.",
     "desc": "Conventional non-destructive testing for welds, materials and in-service assets using suitable surface and volumetric inspection methods. IAIS UAE can integrate this service into fabrication inspection, plant maintenance, shutdown, integrity and project-quality scopes. The final inspection method, coverage, equipment and reporting format are confirmed against the actual asset and client requirement. For UAE and GCC projects, this service can also be coordinated with complementary NDT, access, thermal-treatment, materials or engineering support where a multi-discipline scope is required.",
-    "img": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1600&auto=format&fit=crop",
+    "img": "assets/Images/modern-industrial-inspection-lab.png",
     "tags": [
       "INSPECTION",
       "IAIS UAE"
@@ -1636,7 +1636,7 @@ const IAIS_SERVICES = [
     "title": "Oil and Gas Inspection and Maintenance",
     "short": "Oil and Gas Inspection and Maintenance support for industrial projects in the UAE and GCC, delivered as a defined field or engineering scope with traceable inspection documentation.",
     "desc": "Oil and Gas Inspection and Maintenance support for industrial projects in the UAE and GCC, delivered as a defined field or engineering scope with traceable inspection documentation. IAIS UAE can integrate this service into fabrication inspection, plant maintenance, shutdown, integrity and project-quality scopes. The final inspection method, coverage, equipment and reporting format are confirmed against the actual asset and client requirement. For UAE and GCC projects, this service can also be coordinated with complementary NDT, access, thermal-treatment, materials or engineering support where a multi-discipline scope is required.",
-    "img": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1600&auto=format&fit=crop",
+    "img": "assets/Images/modern-industrial-inspection-lab.png",
     "tags": [
       "INSPECTION",
       "IAIS UAE"
@@ -1699,7 +1699,7 @@ const IAIS_SERVICES = [
     "title": "Pipeline Integrity Inspection Services",
     "short": "Pipeline integrity inspection support for corrosion, wall loss, weld condition and maintenance planning across operating and project assets.",
     "desc": "Pipeline integrity inspection support for corrosion, wall loss, weld condition and maintenance planning across operating and project assets. IAIS UAE can integrate this service into fabrication inspection, plant maintenance, shutdown, integrity and project-quality scopes. The final inspection method, coverage, equipment and reporting format are confirmed against the actual asset and client requirement. For UAE and GCC projects, this service can also be coordinated with complementary NDT, access, thermal-treatment, materials or engineering support where a multi-discipline scope is required.",
-    "img": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1600&auto=format&fit=crop",
+    "img": "assets/Images/modern-industrial-inspection-lab.png",
     "tags": [
       "INSPECTION",
       "IAIS UAE"
@@ -1889,7 +1889,7 @@ const IAIS_SERVICES = [
     "title": "Shutdown and Turnaround Services",
     "short": "Shutdown and Turnaround Services support for industrial projects in the UAE and GCC, delivered as a defined field or engineering scope with traceable inspection documentation.",
     "desc": "Shutdown and Turnaround Services support for industrial projects in the UAE and GCC, delivered as a defined field or engineering scope with traceable inspection documentation. IAIS UAE can integrate this service into fabrication inspection, plant maintenance, shutdown, integrity and project-quality scopes. The final inspection method, coverage, equipment and reporting format are confirmed against the actual asset and client requirement. For UAE and GCC projects, this service can also be coordinated with complementary NDT, access, thermal-treatment, materials or engineering support where a multi-discipline scope is required.",
-    "img": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1600&auto=format&fit=crop",
+    "img": "assets/Images/modern-industrial-inspection-lab.png",
     "tags": [
       "INSPECTION",
       "IAIS UAE"
@@ -1921,7 +1921,7 @@ const IAIS_SERVICES = [
     "title": "Tank Inspection and Maintenance",
     "short": "Tank Inspection and Maintenance support for industrial projects in the UAE and GCC, delivered as a defined field or engineering scope with traceable inspection documentation.",
     "desc": "Tank Inspection and Maintenance support for industrial projects in the UAE and GCC, delivered as a defined field or engineering scope with traceable inspection documentation. IAIS UAE can integrate this service into fabrication inspection, plant maintenance, shutdown, integrity and project-quality scopes. The final inspection method, coverage, equipment and reporting format are confirmed against the actual asset and client requirement. For UAE and GCC projects, this service can also be coordinated with complementary NDT, access, thermal-treatment, materials or engineering support where a multi-discipline scope is required.",
-    "img": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1600&auto=format&fit=crop",
+    "img": "assets/Images/modern-industrial-inspection-lab.png",
     "tags": [
       "INSPECTION",
       "IAIS UAE"
@@ -1953,7 +1953,7 @@ const IAIS_SERVICES = [
     "title": "Third Party inspection",
     "short": "Independent third-party inspection support for vendor, fabrication, construction and project quality activities with traceable reporting.",
     "desc": "Independent third-party inspection support for vendor, fabrication, construction and project quality activities with traceable reporting. IAIS UAE can integrate this service into fabrication inspection, plant maintenance, shutdown, integrity and project-quality scopes. The final inspection method, coverage, equipment and reporting format are confirmed against the actual asset and client requirement. For UAE and GCC projects, this service can also be coordinated with complementary NDT, access, thermal-treatment, materials or engineering support where a multi-discipline scope is required.",
-    "img": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1600&auto=format&fit=crop",
+    "img": "assets/Images/modern-industrial-inspection-lab.png",
     "tags": [
       "INSPECTION",
       "IAIS UAE"
@@ -1985,7 +1985,7 @@ const IAIS_SERVICES = [
     "title": "Tube Inspections",
     "short": "Tube Inspections support for industrial projects in the UAE and GCC, delivered as a defined field or engineering scope with traceable inspection documentation.",
     "desc": "Tube Inspections support for industrial projects in the UAE and GCC, delivered as a defined field or engineering scope with traceable inspection documentation. IAIS UAE can integrate this service into fabrication inspection, plant maintenance, shutdown, integrity and project-quality scopes. The final inspection method, coverage, equipment and reporting format are confirmed against the actual asset and client requirement. For UAE and GCC projects, this service can also be coordinated with complementary NDT, access, thermal-treatment, materials or engineering support where a multi-discipline scope is required.",
-    "img": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1600&auto=format&fit=crop",
+    "img": "assets/Images/modern-industrial-inspection-lab.png",
     "tags": [
       "INSPECTION",
       "IAIS UAE"

@@ -75,7 +75,7 @@ read:"5 min read"
 id:7,
 cat:"Liquid Penetrant Testing",
 title:"Liquid Penetrant Testing for Precision Surface Inspection",
-img:"https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200&auto=format&fit=crop",
+img:'assets/Images/banner.png',
 excerpt:"Liquid Penetrant Testing provides an effective method for detecting fine surface-breaking cracks in stainless steel, aluminium and non-ferromagnetic materials.",
 date:"05 July 2026",
 author:"Quality Assurance Team",
